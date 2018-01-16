@@ -1,0 +1,53 @@
+{
+	"name": "abaqus",
+	"displayName": "abaqus",
+	"description": "abaqus inp language support for VScode",
+	"version": "1.0.0",
+	"publisher": "JP",
+	"engines": {
+		"vscode": "^1.17.0"
+	},
+	"categories": [
+		"Languages"
+	],
+	"icon": "marketplace-icon.png",
+	"galleryBanner": {
+		"color": "#4c4c4c",
+		"theme": "dark"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "abaqus",
+				"aliases": [
+					"Abaqus",
+					"abaqus"
+				],
+				"extensions": [
+					".inp",
+					".inc",
+					".incl"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "abaqus",
+				"scopeName": "source.abaqus",
+				"path": "./syntaxes/abaqus.tmLanguage"
+			}
+		],
+		"snippets": [
+			{
+				"language": "abaqus",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "32203d7e-77a5-4351-9255-8c9645161d8f",
+		"publisherId": "33f2d7f2-5c69-4e7a-9258-e9d6b19be782",
+		"publisherDisplayName": "JP"
+	}
+}

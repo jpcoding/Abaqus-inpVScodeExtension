@@ -1,0 +1,56 @@
+{
+	"BOUNDARY": {
+		"prefix": "BOUNDARY",
+		"body": "\r\n*BOUNDARY, TYPE=${1:DISPLACEMENT}\r\n${2:set_name}, ${3:dof_from}, ${4:dof_to}, ${5:inital_displacement}\r\n",
+		"description": "DISPLACEMENT BOUNDARY Keyword",
+		"scope": "source.abaqus"
+	},
+	"BOUNDARY1": {
+		"prefix": "BOUNDARY",
+		"body": "\r\n*BOUNDARY, ${1:FIXED}\r\n${2:node_set_label}, ${3:PINNED}\r\n",
+		"description": "FIXED BOUNDARY Keyword",
+		"scope": "source.abaqus"
+	},
+	"CLOAD": {
+		"prefix": "CLOAD",
+		"body": "\r\n*CLOAD\r\n${1:node_set_label}, ${2:dof}, ${3:magnitude}\r\n",
+		"description": "CLOAD Keyword",
+		"scope": "source.abaqus"
+	},
+	"CONTACT PAIR": {
+		"prefix": "CONTACT PAIR",
+		"body": "\r\nCONTACT PAIR, INTERACTION=${1:interaction} ${2:, TYPE=${3:SURFACE TO SURFACE}}${4:, ADJUST=${5:YES}} ${6:, SMALL SLIDING}\r\n${7:slave_surface}, ${8:master_surface}\r\n",
+		"description": "CONTACT PAIR Keyword",
+		"scope": "source.abaqus"
+	},
+	"DISTRIBUTING COUPLING": {
+		"prefix": "DISTRIBUTING COUPLING",
+		"body": "\r\n*COUPLING, CONSTRAINT NAME=${1:give_me_a_name}, REF NODE=${2:node_num_or_set}, SURFACE=${3:surf_name_coupling_nodes}\r\n*DISTRIBUTING, ${4:WEIGHTING METHOD=${5:UNIFORM}}\r\n${6:dof_from}, ${7:dof_to}\r\n",
+		"description": "DISTRIBUTING COUPLING Keyword",
+		"scope": "source.abaqus"
+	},
+	"INCLUDE": {
+		"prefix": "INCLUDE",
+		"body": "\r\n*INCLUDE, INPUT=${1:include_file.inc}\r\n",
+		"description": "INCLUDE Keyword",
+		"scope": "source.abaqus"
+	},
+	"INTERACTION": {
+		"prefix": "INTERACTION",
+		"body": "\r\nSURFACE INTERACTION, NAME=${1:no_friction}\r\n",
+		"description": "INTERACTION NO FRICTION Keyword",
+		"scope": "source.abaqus"
+	},
+	"KINEMATIC COUPLING": {
+		"prefix": "KINEMATIC COUPLING",
+		"body": "\r\n*COUPLING, CONSTRAINT NAME=${1:give_me_a_name}, REF NODE=${2:node_num_or_set}, SURFACE=${3:surf_name_coupling_nodes}\r\n*KINEMATIC\r\n${4:dof_from}, ${5:dof_to}\r\n",
+		"description": "KINEMATIC COUPLING Keyword",
+		"scope": "source.abaqus"
+	},
+	"TIE": {
+		"prefix": "TIE",
+		"body": "\r\n*TIE, NAME=${1:tie_name}${2:, ADJUST=${3:NO}}${4:, POSITION TOLERANCE=${5:0.1}}\r\n${6:slave_surf_name}, ${7:master_surf_name}\r\n",
+		"description": "TIE Keyword",
+		"scope": "source.abaqus"
+	}
+}
