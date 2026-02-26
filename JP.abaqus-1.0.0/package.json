@@ -4,6 +4,10 @@
 	"description": "abaqus inp language support for VScode",
 	"version": "1.2.0",
 	"publisher": "JP",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jpcoding/Abaqus-inpVScodeExtension"
+	},
 	"main": "./extension.js",
 	"activationEvents": [
 		"onLanguage:abaqus"
