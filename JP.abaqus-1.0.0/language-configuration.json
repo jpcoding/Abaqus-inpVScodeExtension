@@ -5,24 +5,72 @@
     },
     // symbols used as brackets
     "brackets": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"]
+        [
+            "{",
+            "}"
+        ],
+        [
+            "[",
+            "]"
+        ],
+        [
+            "(",
+            ")"
+        ]
     ],
     // symbols that are auto closed when typing
     "autoClosingPairs": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"],
-        ["\"", "\""],
-        ["'", "'"]
+        [
+            "{",
+            "}"
+        ],
+        [
+            "[",
+            "]"
+        ],
+        [
+            "(",
+            ")"
+        ],
+        [
+            "\"",
+            "\""
+        ],
+        [
+            "'",
+            "'"
+        ]
     ],
     // symbols that that can be used to surround a selection
     "surroundingPairs": [
-        ["{", "}"],
-        ["[", "]"],
-        ["(", ")"],
-        ["\"", "\""],
-        ["'", "'"]
-    ]
+        [
+            "{",
+            "}"
+        ],
+        [
+            "[",
+            "]"
+        ],
+        [
+            "(",
+            ")"
+        ],
+        [
+            "\"",
+            "\""
+        ],
+        [
+            "'",
+            "'"
+        ]
+    ],
+    // Block folding:
+    //   start = any *KEYWORD line (not a ** comment)
+    //   end   = *END PART / *END ASSEMBLY / *END INSTANCE / *END STEP / *END LOAD CASE (case-insensitive via char classes)
+    "folding": {
+        "markers": {
+            "start": "^\\s*\\*(?!\\*)",
+            "end": "^\\s*\\*[Ee][Nn][Dd]\\s+(([Pp][Aa][Rr][Tt])|([Aa][Ss][Ss][Ee][Mm][Bb][Ll][Yy])|([Ii][Nn][Ss][Tt][Aa][Nn][Cc][Ee])|([Ss][Tt][Ee][Pp])|([Ll][Oo][Aa][Dd]\\s+[Cc][Aa][Ss][Ee]))\\b"
+        }
+    }
 }

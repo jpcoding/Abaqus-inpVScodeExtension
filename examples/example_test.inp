@@ -1,0 +1,236 @@
+** ============================================================
+** ABAQUS EXTENSION EXAMPLE / TEST FILE
+** Purpose : Exercise syntax highlighting and available snippets
+**           in the JP.abaqus VSCode Extension.
+**
+** Grammar features tested:
+**   - comment.line.abaqus       (lines starting with **)
+**   - keyword.operator.abaqus   (* prefix)
+**   - keyword.control.abaqus    (keyword name after *)
+**   - entity.name.section.*     (keyword line including parameters)
+**   - entity.name.function.*    (parameter keys like NAME=, TYPE=)
+**   - punctuation.*             (commas, = sign)
+**   - invalid.illegal.abaqus    (error patterns — see bottom)
+** ============================================================
+
+** ---- HEADING -----------------------------------------------
+*HEADING
+Example Test Model
+Simple cantilever beam with contact — one step static analysis
+
+** ---- NODES -------------------------------------------------
+*NODE, NSET=ALL_NODES
+1,  0.0,  0.0,  0.0
+2,  1.0,  0.0,  0.0
+3,  2.0,  0.0,  0.0
+4,  3.0,  0.0,  0.0
+5,  4.0,  0.0,  0.0
+** Rigid body reference node
+100, 4.5,  0.0,  0.0
+
+
+*NODE, NSET=nset_name
+node_number, x, y, z
+
+
+
+** ---- ELEMENTS ----------------------------------------------
+*ELEMENT, TYPE=C3D8R, ELSET=BEAM_ELS
+1, 1, 2, 3, 4
+2, 2, 3, 4, 5
+
+** ---- NODE SETS --------------------------------------------
+*NSET, NSET=FIXED_END
+1,
+*NSET, NSET=FREE_END
+5,
+*NSET, NSET=LOAD_NODE
+5,
+*NSET, NSET=ALL_NODES, GENERATE
+1, 100, 1
+
+** ---- ELEMENT SETS -----------------------------------------
+*ELSET, ELSET=BEAM_ELS, GENERATE
+1, 2, 1
+
+** ---- SURFACES ----------------------------------------------
+*SURFACE, NAME=BEAM_SURF, TYPE=ELEMENT
+BEAM_ELS, S1
+*SURFACE, NAME=RIGID_SURF, TYPE=NODE
+100,
+
+** ---- MATERIAL ----------------------------------------------
+*MATERIAL, NAME=STEEL
+*DENSITY
+7850.0
+*ELASTIC, TYPE=ISOTROPIC
+210000.0, 0.3
+*PLASTIC
+250.0, 0.0
+350.0, 0.05
+
+** ---- SECTIONS ----------------------------------------------
+*SOLID SECTION, ELSET=BEAM_ELS, MATERIAL=STEEL
+
+** ---- RIGID BODY --------------------------------------------
+*RIGID BODY, REF NODE=100, ELSET=BEAM_ELS
+
+** ---- ORIENTATION -------------------------------------------
+*ORIENTATION, NAME=LOCAL_ORI, SYSTEM=RECTANGULAR
+1.,0.,0., 0.,1.,0.
+1, 0.
+
+** ---- MPC --------------------------------------------------
+*MPC
+BEAM, 5, 100
+
+** ---- TIE CONSTRAINT ----------------------------------------
+*TIE, NAME=FIXED_TIE, ADJUST=NO, POSITION TOLERANCE=0.01
+BEAM_SURF, RIGID_SURF
+
+** ---- EQUATION MPC -----------------------------------------
+*EQUATION
+2
+5, 1, 1.0, 100, 1, -1.0
+
+** ---- AMPLITUDE ---------------------------------------------
+*AMPLITUDE, NAME=RAMP_UP, DEFINITION=TABULAR
+0.0, 0.0
+1.0, 1.0
+
+** ---- CONTACT INTERACTION -----------------------------------
+*SURFACE INTERACTION, NAME=FRICTIONLESS_PROP
+*FRICTION
+0.0
+*SURFACE INTERACTION, NAME=FRICTION_PROP
+*FRICTION
+0.3
+
+** ---- CONTACT PAIR (keyword-specific highlighting) ----------
+*CONTACT PAIR, INTERACTION=FRICTIONLESS_PROP, TYPE=SURFACE TO SURFACE
+BEAM_SURF, RIGID_SURF
+
+** CONTACT PAIR with optional parameters:
+*CONTACT PAIR, INTERACTION=FRICTION_PROP, TYPE=NODE TO SURFACE, ADJUST=0.01, SMALL SLIDING
+BEAM_SURF, RIGID_SURF
+
+** ---- INCLUDE example --------------------------------------
+** *INCLUDE, INPUT=additional_data.inc
+
+** ---- RESTART -----------------------------------------------
+*RESTART, WRITE, FREQUENCY=1
+
+** ---- INITIAL CONDITIONS ------------------------------------
+*INITIAL CONDITIONS, TYPE=TEMPERATURE
+ALL_NODES, 20.0
+*INITIAL CONDITIONS, TYPE=STRESS
+BEAM_ELS, 0., 0., 0.
+
+** ---- TRANSFORM ---------------------------------------------
+*TRANSFORM, NSET=FIXED_END, TYPE=R
+1.,0.,0., 0.,1.,0.
+
+** ---- STEP : STATIC -----------------------------------------
+*STEP, NAME=STATIC_LOAD, NLGEOM=NO
+*STATIC
+0.1, 1.0, 1e-5, 1.0
+**
+** Boundary conditions
+*BOUNDARY, TYPE=DISPLACEMENT
+FIXED_END, 1, 6, 0.0
+**
+** Concentrated load
+*CLOAD
+LOAD_NODE, 2, -10000.0
+**
+** Distributed load
+*DLOAD
+BEAM_ELS, P1, 500.0
+**
+** Temperature predefined field
+*TEMPERATURE
+ALL_NODES, 20.0
+**
+** Output requests
+*OUTPUT, FIELD, NUMBER INTERVAL=10
+*NODE OUTPUT
+U, RF
+*ELEMENT OUTPUT, DIRECTIONS=YES
+S, E, PE, PEEQ, MISES
+*OUTPUT, HISTORY, TIME INTERVAL=0.01
+*NODE OUTPUT, NSET=LOAD_NODE
+U, RF
+**
+*END STEP
+
+** ---- STEP : FREQUENCY EXTRACTION --------------------------
+*STEP
+*FREQUENCY, EIGENSOLVER=LANCZOS
+10
+**
+*NODE OUTPUT
+U
+*END STEP
+
+** ---- STEP : BUCKLE -----------------------------------------
+*STEP
+*BUCKLE, EIGENSOLVER=LANCZOS
+5
+**
+*NODE OUTPUT
+U
+*END STEP
+
+** ---- STEP : DYNAMIC IMPLICIT -------------------------------
+*STEP, NAME=DYN_IMPL, NLGEOM=NO
+*DYNAMIC, DIRECT
+0.001, 1.0
+**
+*OUTPUT, HISTORY, TIME INTERVAL=0.01
+*NODE OUTPUT
+U, V, A
+*OUTPUT, FIELD, NUMBER INTERVAL=10
+*NODE OUTPUT
+U, V
+*ELEMENT OUTPUT
+S
+*END STEP
+
+** ---- STEP : DYNAMIC EXPLICIT (Abaqus/Explicit) -------------
+*STEP, NAME=DYN_EXPL
+*DYNAMIC, EXPLICIT
+, 0.005
+**
+*OUTPUT, HISTORY, TIME INTERVAL=0.0001
+*NODE OUTPUT
+U, V, A
+*OUTPUT, FIELD, NUMBER INTERVAL=10
+*NODE OUTPUT
+U, V
+*ELEMENT OUTPUT
+S, PE
+*END STEP
+
+** ---- STEP : HEAT TRANSFER ----------------------------------
+*STEP, NAME=HEAT_SS
+*HEAT TRANSFER, STEADY STATE
+1., 1.
+**
+*OUTPUT, FIELD
+*NODE OUTPUT
+NT
+*ELEMENT OUTPUT
+HFL
+*END STEP
+
+** ==============================================================
+** INTENTIONAL SYNTAX ERROR EXAMPLES (invalid.illegal.abaqus)
+** ==============================================================
+** The line below has a space between * and the keyword — ERROR:
+* BOUNDARY
+** The line below exceeds 256 characters — should be flagged too:
+** (Not rendered here to keep the file valid, but any data line
+**  longer than 256 chars will be highlighted as invalid.illegal)
+** ==============================================================
+** END OF EXAMPLE FILE
+** ==============================================================

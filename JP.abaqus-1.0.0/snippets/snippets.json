@@ -1,56 +1,314 @@
 {
+	"AMPLITUDE": {
+		"prefix": "AMPLITUDE",
+		"body": "AMPLITUDE, NAME=${1:amp_name}, DEFINITION=${2:TABULAR}\r\n${3:time1}, ${4:value1}\r\n${5:time2}, ${6:value2}",
+		"description": "AMPLITUDE Keyword",
+		"scope": "source.abaqus"
+	},
+	"ASSEMBLY": {
+		"prefix": "ASSEMBLY",
+		"body": "ASSEMBLY, NAME=${1:assembly_name}\r\n$0\r\n*END ASSEMBLY",
+		"description": "ASSEMBLY / END ASSEMBLY block",
+		"scope": "source.abaqus"
+	},
+	"BEAM GENERAL SECTION": {
+		"prefix": "BEAM GENERAL SECTION",
+		"body": "BEAM GENERAL SECTION, ELSET=${1:elset_name}, SECTION=${2:CIRC}, DENSITY=${3:density}\r\n${4:section_geometry_data}\r\n${5:E}, ${6:G}",
+		"description": "BEAM GENERAL SECTION Keyword",
+		"scope": "source.abaqus"
+	},
+	"BEAM SECTION": {
+		"prefix": "BEAM SECTION",
+		"body": "BEAM SECTION, ELSET=${1:elset_name}, MATERIAL=${2:mat_name}, SECTION=${3:CIRC}\r\n${4:section_geometry_data}\r\n${5:0.}, ${6:0.}, ${7:-1.}",
+		"description": "BEAM SECTION Keyword",
+		"scope": "source.abaqus"
+	},
 	"BOUNDARY": {
 		"prefix": "BOUNDARY",
-		"body": "\r\n*BOUNDARY, TYPE=${1:DISPLACEMENT}\r\n${2:set_name}, ${3:dof_from}, ${4:dof_to}, ${5:inital_displacement}\r\n",
+		"body": "BOUNDARY, TYPE=${1:DISPLACEMENT}\r\n${2:set_name}, ${3:dof_from}, ${4:dof_to}, ${5:initial_displacement}",
 		"description": "DISPLACEMENT BOUNDARY Keyword",
 		"scope": "source.abaqus"
 	},
-	"BOUNDARY1": {
-		"prefix": "BOUNDARY",
-		"body": "\r\n*BOUNDARY, ${1:FIXED}\r\n${2:node_set_label}, ${3:PINNED}\r\n",
+	"BOUNDARY FIXED": {
+		"prefix": "BOUNDARY FIXED",
+		"body": "BOUNDARY\r\n${1:node_set_label}, ${2:PINNED}",
 		"description": "FIXED BOUNDARY Keyword",
+		"scope": "source.abaqus"
+	},
+	"BUCKLE": {
+		"prefix": "BUCKLE",
+		"body": "STEP\r\n*BUCKLE, EIGENSOLVER=${1:LANCZOS}\r\n${2:num_eigenvalues}\r\n**\r\n*NODE OUTPUT\r\nU\r\n*END STEP",
+		"description": "BUCKLE eigenvalue step",
 		"scope": "source.abaqus"
 	},
 	"CLOAD": {
 		"prefix": "CLOAD",
-		"body": "\r\n*CLOAD\r\n${1:node_set_label}, ${2:dof}, ${3:magnitude}\r\n",
-		"description": "CLOAD Keyword",
+		"body": "CLOAD\r\n${1:node_set_label}, ${2:dof}, ${3:magnitude}",
+		"description": "CLOAD Concentrated Load Keyword",
+		"scope": "source.abaqus"
+	},
+	"CONTACT": {
+		"prefix": "CONTACT",
+		"body": "CONTACT\r\n*CONTACT INCLUSIONS, ALL EXTERIOR\r\n*CONTACT PROPERTY ASSIGNMENT\r\n, , ${1:int_prop_name}",
+		"description": "General CONTACT (Abaqus/Explicit or Standard)",
 		"scope": "source.abaqus"
 	},
 	"CONTACT PAIR": {
 		"prefix": "CONTACT PAIR",
-		"body": "\r\nCONTACT PAIR, INTERACTION=${1:interaction} ${2:, TYPE=${3:SURFACE TO SURFACE}}${4:, ADJUST=${5:YES}} ${6:, SMALL SLIDING}\r\n${7:slave_surface}, ${8:master_surface}\r\n",
+		"body": "CONTACT PAIR, INTERACTION=${1:interaction}, TYPE=${2:SURFACE TO SURFACE}\r\n${3:slave_surface}, ${4:master_surface}",
 		"description": "CONTACT PAIR Keyword",
+		"scope": "source.abaqus"
+	},
+	"DENSITY": {
+		"prefix": "DENSITY",
+		"body": "DENSITY\r\n${1:density}",
+		"description": "DENSITY material property",
 		"scope": "source.abaqus"
 	},
 	"DISTRIBUTING COUPLING": {
 		"prefix": "DISTRIBUTING COUPLING",
-		"body": "\r\n*COUPLING, CONSTRAINT NAME=${1:give_me_a_name}, REF NODE=${2:node_num_or_set}, SURFACE=${3:surf_name_coupling_nodes}\r\n*DISTRIBUTING, ${4:WEIGHTING METHOD=${5:UNIFORM}}\r\n${6:dof_from}, ${7:dof_to}\r\n",
+		"body": "COUPLING, CONSTRAINT NAME=${1:give_me_a_name}, REF NODE=${2:node_num_or_set}, SURFACE=${3:surf_name_coupling_nodes}\r\n*DISTRIBUTING, WEIGHTING METHOD=${4:UNIFORM}\r\n${5:dof_from}, ${6:dof_to}",
 		"description": "DISTRIBUTING COUPLING Keyword",
+		"scope": "source.abaqus"
+	},
+	"DLOAD": {
+		"prefix": "DLOAD",
+		"body": "DLOAD\r\n${1:elset_name}, ${2:P${3:1}}, ${4:magnitude}",
+		"description": "DLOAD Distributed Load Keyword",
+		"scope": "source.abaqus"
+	},
+	"DYNAMIC EXPLICIT": {
+		"prefix": "DYNAMIC EXPLICIT",
+		"body": "STEP, NAME=${1:step_name}\r\n*DYNAMIC, EXPLICIT\r\n, ${2:time_period}\r\n**\r\n*OUTPUT, HISTORY, TIME INTERVAL=${3:0.01}\r\n*NODE OUTPUT\r\nU, V, A\r\n*OUTPUT, FIELD, NUMBER INTERVAL=${4:10}\r\n*NODE OUTPUT\r\nU, V\r\n*ELEMENT OUTPUT\r\nS, PE\r\n*END STEP",
+		"description": "DYNAMIC EXPLICIT full step",
+		"scope": "source.abaqus"
+	},
+	"DYNAMIC IMPLICIT": {
+		"prefix": "DYNAMIC IMPLICIT",
+		"body": "STEP, NAME=${1:step_name}, NLGEOM=${2:NO}\r\n*DYNAMIC, ${3:DIRECT}\r\n${4:time_increment}, ${5:time_period}\r\n**\r\n*OUTPUT, HISTORY, TIME INTERVAL=${6:0.01}\r\n*NODE OUTPUT\r\nU, V, A\r\n*OUTPUT, FIELD, NUMBER INTERVAL=${7:10}\r\n*NODE OUTPUT\r\nU, V\r\n*ELEMENT OUTPUT\r\nS\r\n*END STEP",
+		"description": "DYNAMIC IMPLICIT full step",
+		"scope": "source.abaqus"
+	},
+	"ELASTIC": {
+		"prefix": "ELASTIC",
+		"body": "ELASTIC, TYPE=${1:ISOTROPIC}\r\n${2:E}, ${3:nu}",
+		"description": "ELASTIC material property",
+		"scope": "source.abaqus"
+	},
+	"ELEMENT": {
+		"prefix": "ELEMENT",
+		"body": "ELEMENT, TYPE=${1:C3D8R}, ELSET=${2:elset_name}\r\n${3:element_number}, ${4:node1}, ${5:node2}, ${6:node3}, ${7:node4}",
+		"description": "ELEMENT Definition Keyword",
+		"scope": "source.abaqus"
+	},
+	"ELEMENT OUTPUT": {
+		"prefix": "ELEMENT OUTPUT",
+		"body": "ELEMENT OUTPUT, DIRECTIONS=${1:YES}\r\n${2:S, E, PE, PEEQ, MISES}",
+		"description": "ELEMENT OUTPUT request",
+		"scope": "source.abaqus"
+	},
+	"ELSET": {
+		"prefix": "ELSET",
+		"body": "ELSET, ELSET=${1:set_name}${2:, GENERATE}\r\n${3:e1}, ${4:e2}, ${5:increment}",
+		"description": "ELSET Element Set Definition",
+		"scope": "source.abaqus"
+	},
+	"EQUATION": {
+		"prefix": "EQUATION",
+		"body": "EQUATION\r\n${1:num_terms}\r\n${2:node1}, ${3:dof1}, ${4:coeff1}, ${5:node2}, ${6:dof2}, ${7:coeff2}",
+		"description": "EQUATION linear multi-point constraint",
+		"scope": "source.abaqus"
+	},
+	"EXPANSION": {
+		"prefix": "EXPANSION",
+		"body": "EXPANSION, TYPE=${1:ISOTROPIC}\r\n${2:alpha}",
+		"description": "EXPANSION thermal expansion coefficient",
+		"scope": "source.abaqus"
+	},
+	"FREQUENCY": {
+		"prefix": "FREQUENCY",
+		"body": "STEP\r\n*FREQUENCY, EIGENSOLVER=${1:LANCZOS}\r\n${2:num_modes}\r\n**\r\n*NODE OUTPUT\r\nU\r\n*END STEP",
+		"description": "FREQUENCY eigenvalue extraction step",
+		"scope": "source.abaqus"
+	},
+	"FRICTION": {
+		"prefix": "FRICTION",
+		"body": "FRICTION\r\n${1:mu}",
+		"description": "FRICTION contact property",
+		"scope": "source.abaqus"
+	},
+	"HEADING": {
+		"prefix": "HEADING",
+		"body": "HEADING\r\n${1:Model description}",
+		"description": "HEADING Keyword",
+		"scope": "source.abaqus"
+	},
+	"HEAT TRANSFER STEP": {
+		"prefix": "HEAT TRANSFER",
+		"body": "STEP, NAME=${1:step_name}\r\n*HEAT TRANSFER, STEADY STATE\r\n${2:1.}, ${3:1.}\r\n**\r\n*OUTPUT, FIELD\r\n*NODE OUTPUT\r\nNT\r\n*ELEMENT OUTPUT\r\nHFL\r\n*END STEP",
+		"description": "HEAT TRANSFER steady-state step",
 		"scope": "source.abaqus"
 	},
 	"INCLUDE": {
 		"prefix": "INCLUDE",
-		"body": "\r\n*INCLUDE, INPUT=${1:include_file.inc}\r\n",
+		"body": "INCLUDE, INPUT=${1:include_file.inc}",
 		"description": "INCLUDE Keyword",
+		"scope": "source.abaqus"
+	},
+	"INITIAL CONDITIONS STRESS": {
+		"prefix": "INITIAL CONDITIONS STRESS",
+		"body": "INITIAL CONDITIONS, TYPE=STRESS\r\n${1:elset_name}, ${2:S11}, ${3:S22}, ${4:S33}",
+		"description": "INITIAL CONDITIONS stress",
+		"scope": "source.abaqus"
+	},
+	"INITIAL CONDITIONS TEMPERATURE": {
+		"prefix": "INITIAL CONDITIONS TEMPERATURE",
+		"body": "INITIAL CONDITIONS, TYPE=TEMPERATURE\r\n${1:nset_name}, ${2:temperature}",
+		"description": "INITIAL CONDITIONS temperature",
+		"scope": "source.abaqus"
+	},
+	"INSTANCE": {
+		"prefix": "INSTANCE",
+		"body": "INSTANCE, NAME=${1:inst_name}, PART=${2:part_name}\r\n${3:0., 0., 0.}\r\n*END INSTANCE",
+		"description": "INSTANCE / END INSTANCE block",
 		"scope": "source.abaqus"
 	},
 	"INTERACTION": {
 		"prefix": "INTERACTION",
-		"body": "\r\nSURFACE INTERACTION, NAME=${1:no_friction}\r\n",
-		"description": "INTERACTION NO FRICTION Keyword",
+		"body": "SURFACE INTERACTION, NAME=${1:int_name}\r\n*FRICTION\r\n${2:0.}",
+		"description": "SURFACE INTERACTION with FRICTION",
 		"scope": "source.abaqus"
 	},
 	"KINEMATIC COUPLING": {
 		"prefix": "KINEMATIC COUPLING",
-		"body": "\r\n*COUPLING, CONSTRAINT NAME=${1:give_me_a_name}, REF NODE=${2:node_num_or_set}, SURFACE=${3:surf_name_coupling_nodes}\r\n*KINEMATIC\r\n${4:dof_from}, ${5:dof_to}\r\n",
+		"body": "COUPLING, CONSTRAINT NAME=${1:give_me_a_name}, REF NODE=${2:node_num_or_set}, SURFACE=${3:surf_name_coupling_nodes}\r\n*KINEMATIC\r\n${4:dof_from}, ${5:dof_to}",
 		"description": "KINEMATIC COUPLING Keyword",
+		"scope": "source.abaqus"
+	},
+	"MATERIAL": {
+		"prefix": "MATERIAL",
+		"body": "MATERIAL, NAME=${1:mat_name}\r\n*DENSITY\r\n${2:density}\r\n*ELASTIC\r\n${3:E}, ${4:nu}",
+		"description": "MATERIAL block with DENSITY and ELASTIC",
+		"scope": "source.abaqus"
+	},
+	"MPC": {
+		"prefix": "MPC",
+		"body": "MPC\r\n${1:BEAM}, ${2:slave_node}, ${3:master_node}",
+		"description": "MPC multi-point constraint",
+		"scope": "source.abaqus"
+	},
+	"NODE": {
+		"prefix": "NODE",
+		"body": "NODE, NSET=${1:nset_name}\r\n${2:node_number}, ${3:x}, ${4:y}, ${5:z}",
+		"description": "NODE Definition Keyword",
+		"scope": "source.abaqus"
+	},
+	"NODE OUTPUT": {
+		"prefix": "NODE OUTPUT",
+		"body": "NODE OUTPUT\r\n${1:U, RF, CF}",
+		"description": "NODE OUTPUT request",
+		"scope": "source.abaqus"
+	},
+	"NSET": {
+		"prefix": "NSET",
+		"body": "NSET, NSET=${1:set_name}${2:, GENERATE}\r\n${3:n1}, ${4:n2}, ${5:increment}",
+		"description": "NSET Node Set Definition",
+		"scope": "source.abaqus"
+	},
+	"ORIENTATION": {
+		"prefix": "ORIENTATION",
+		"body": "ORIENTATION, NAME=${1:ori_name}, SYSTEM=${2:RECTANGULAR}\r\n${3:1.,0.,0.}, ${4:0.,1.,0.}\r\n${5:1}, ${6:0.}",
+		"description": "ORIENTATION Keyword",
+		"scope": "source.abaqus"
+	},
+	"OUTPUT FIELD": {
+		"prefix": "OUTPUT FIELD",
+		"body": "OUTPUT, FIELD, NUMBER INTERVAL=${1:10}\r\n*NODE OUTPUT\r\n${2:U, RF}\r\n*ELEMENT OUTPUT\r\n${3:S, E, MISES}",
+		"description": "OUTPUT FIELD request block",
+		"scope": "source.abaqus"
+	},
+	"OUTPUT HISTORY": {
+		"prefix": "OUTPUT HISTORY",
+		"body": "OUTPUT, HISTORY, TIME INTERVAL=${1:0.01}\r\n*NODE OUTPUT, NSET=${2:nset_name}\r\n${3:U, RF}",
+		"description": "OUTPUT HISTORY request block",
+		"scope": "source.abaqus"
+	},
+	"PART": {
+		"prefix": "PART",
+		"body": "PART, NAME=${1:part_name}\r\n$0\r\n*END PART",
+		"description": "PART / END PART block",
+		"scope": "source.abaqus"
+	},
+	"PLASTIC": {
+		"prefix": "PLASTIC",
+		"body": "PLASTIC\r\n${1:yield_stress_1}, ${2:0.}\r\n${3:yield_stress_2}, ${4:plastic_strain_2}",
+		"description": "PLASTIC isotropic hardening data",
+		"scope": "source.abaqus"
+	},
+	"RESTART": {
+		"prefix": "RESTART",
+		"body": "RESTART, WRITE, FREQUENCY=${1:1}",
+		"description": "RESTART write controls",
+		"scope": "source.abaqus"
+	},
+	"RIGID BODY": {
+		"prefix": "RIGID BODY",
+		"body": "RIGID BODY, REF NODE=${1:ref_node}, ELSET=${2:elset_name}",
+		"description": "RIGID BODY Keyword",
+		"scope": "source.abaqus"
+	},
+	"SHELL SECTION": {
+		"prefix": "SHELL SECTION",
+		"body": "SHELL SECTION, ELSET=${1:elset_name}, MATERIAL=${2:mat_name}\r\n${3:thickness}",
+		"description": "SHELL SECTION Keyword",
+		"scope": "source.abaqus"
+	},
+	"SOLID SECTION": {
+		"prefix": "SOLID SECTION",
+		"body": "SOLID SECTION, ELSET=${1:elset_name}, MATERIAL=${2:mat_name}",
+		"description": "SOLID SECTION Keyword",
+		"scope": "source.abaqus"
+	},
+	"STATIC STEP": {
+		"prefix": "STATIC",
+		"body": "STEP, NAME=${1:step_name}, NLGEOM=${2:NO}\r\n*STATIC\r\n${3:initial_inc}, ${4:time_period}, ${5:min_inc}, ${6:max_inc}\r\n**\r\n*OUTPUT, FIELD, NUMBER INTERVAL=${7:10}\r\n*NODE OUTPUT\r\n${8:U, RF}\r\n*ELEMENT OUTPUT\r\n${9:S, E}\r\n*END STEP",
+		"description": "STATIC full step with output",
+		"scope": "source.abaqus"
+	},
+	"STEP": {
+		"prefix": "STEP",
+		"body": "STEP, NAME=${1:step_name}\r\n$0\r\n*END STEP",
+		"description": "STEP / END STEP block",
+		"scope": "source.abaqus"
+	},
+	"SURFACE": {
+		"prefix": "SURFACE",
+		"body": "SURFACE, NAME=${1:surf_name}, TYPE=${2:ELEMENT}\r\n${3:elset_name}, ${4:S1}",
+		"description": "SURFACE Definition Keyword",
+		"scope": "source.abaqus"
+	},
+	"SURFACE INTERACTION": {
+		"prefix": "SURFACE INTERACTION",
+		"body": "SURFACE INTERACTION, NAME=${1:int_name}",
+		"description": "SURFACE INTERACTION Keyword",
+		"scope": "source.abaqus"
+	},
+	"TEMPERATURE": {
+		"prefix": "TEMPERATURE",
+		"body": "TEMPERATURE\r\n${1:nset_or_node}, ${2:temperature}",
+		"description": "TEMPERATURE predefined field",
 		"scope": "source.abaqus"
 	},
 	"TIE": {
 		"prefix": "TIE",
-		"body": "\r\n*TIE, NAME=${1:tie_name}${2:, ADJUST=${3:NO}}${4:, POSITION TOLERANCE=${5:0.1}}\r\n${6:slave_surf_name}, ${7:master_surf_name}\r\n",
+		"body": "TIE, NAME=${1:tie_name}, ADJUST=${2:NO}, POSITION TOLERANCE=${3:0.1}\r\n${4:slave_surf_name}, ${5:master_surf_name}",
 		"description": "TIE Keyword",
+		"scope": "source.abaqus"
+	},
+	"TRANSFORM": {
+		"prefix": "TRANSFORM",
+		"body": "TRANSFORM, NSET=${1:nset_name}, TYPE=${2:R}\r\n${3:x1}, ${4:y1}, ${5:z1}, ${6:x2}, ${7:y2}, ${8:z2}",
+		"description": "TRANSFORM local coordinate system at nodes",
 		"scope": "source.abaqus"
 	}
 }
