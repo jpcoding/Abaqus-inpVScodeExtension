@@ -1,4 +1,4 @@
-# vscode-abaquusinp
+# vscode-abaqus-inp
 
 Abaqus `.inp` language support for VS Code.
 
