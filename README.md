@@ -42,6 +42,16 @@ Highlighting on files **larger than ~300 KB** is also kept active automatically 
 > "[abaqus]": { "editor.largeFileOptimizations": true }
 > ```
 
+> **If highlighting is not working on large files:** check your user or workspace `settings.json` for a conflicting entry. Any value you set manually **overrides** the extension default. If you have `"editor.largeFileOptimizations": true` set anywhere, remove it or explicitly override it:
+> ```json
+> "[abaqus]": {
+>     "editor.largeFileOptimizations": false,
+>     "editor.maxTokenizationLineLength": 500000
+> }
+> ```
+
+> **Hard limit (VS Code engine):** VS Code's tokenizer has a hard-coded [20 MB threshold](https://github.com/microsoft/vscode/blob/main/src/vs/editor/common/model/textModel.ts). Files larger than ~20 MB will not be syntax-highlighted regardless of settings — this is a VS Code limitation, not an extension limitation. See [#30180](https://github.com/microsoft/vscode/issues/30180) and [#191065](https://github.com/microsoft/vscode/issues/191065).
+
 ---
 
 ## Snippets
@@ -183,6 +193,12 @@ This extension is based on the Sublime Text package by SenhorLucas: https://gith
 ---
 
 ## Changelog
+
+### v1.2.2 — 2026-02-27
+
+- README: documented that manually setting `editor.largeFileOptimizations: true` in `settings.json` overrides the extension default and breaks highlighting on large files. Added troubleshooting steps and a note on VS Code's hard-coded 20 MB tokenization limit.
+
+---
 
 ### v1.2.1 — 2026-02-27
 
