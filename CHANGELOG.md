@@ -4,6 +4,14 @@ All notable changes to the **JP Abaqus** VS Code extension are documented here.
 
 ---
 
+## [1.2.1] — 2026-02-27
+
+### Changed
+- Reorganised repository: extension source is now at the repo root (no subfolder).
+- README and CHANGELOG are now correctly included in the published package and visible on the marketplace.
+
+---
+
 ## [1.2.0] — 2026-02-26
 
 ### Added

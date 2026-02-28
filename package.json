@@ -2,7 +2,7 @@
 	"name": "abaqus",
 	"displayName": "abaqus",
 	"description": "abaqus inp language support for VScode",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"publisher": "JP",
 	"repository": {
 		"type": "git",

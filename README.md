@@ -184,6 +184,12 @@ This extension is based on the Sublime Text package by SenhorLucas: https://gith
 
 ## Changelog
 
+### v1.2.1 — 2026-02-27
+
+- Housekeeping: extension source moved to repo root; README and CHANGELOG now appear correctly on the marketplace page.
+
+---
+
 ### v1.2.0 — 2026-02-26
 
 **Block folding (all keywords)**

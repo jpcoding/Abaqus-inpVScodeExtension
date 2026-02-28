@@ -1,5 +1,0 @@
-.vscode/**
-.gitignore
-**/*.vsix
-**/test_fold.js
-**/abaqus-*.vsix
