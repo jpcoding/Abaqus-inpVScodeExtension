@@ -1,8 +1,86 @@
 {
+	"ACOUSTIC CONTRIBUTION": {
+		"prefix": "ACOUSTIC CONTRIBUTION",
+		"body": "ACOUSTIC CONTRIBUTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ACOUSTIC CONTRIBUTION keyword",
+		"scope": "source.abaqus"
+	},
+	"ACOUSTIC FLOW VELOCITY": {
+		"prefix": "ACOUSTIC FLOW VELOCITY",
+		"body": "ACOUSTIC FLOW VELOCITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ACOUSTIC FLOW VELOCITY keyword",
+		"scope": "source.abaqus"
+	},
+	"ACOUSTIC MEDIUM": {
+		"prefix": "ACOUSTIC MEDIUM",
+		"body": "ACOUSTIC MEDIUM\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ACOUSTIC MEDIUM keyword",
+		"scope": "source.abaqus"
+	},
+	"ACOUSTIC WAVE FORMULATION": {
+		"prefix": "ACOUSTIC WAVE FORMULATION",
+		"body": "ACOUSTIC WAVE FORMULATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ACOUSTIC WAVE FORMULATION keyword",
+		"scope": "source.abaqus"
+	},
+	"ADAPTIVE MESH": {
+		"prefix": "ADAPTIVE MESH",
+		"body": "ADAPTIVE MESH\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ADAPTIVE MESH keyword",
+		"scope": "source.abaqus"
+	},
+	"ADAPTIVE MESH CONSTRAINT": {
+		"prefix": "ADAPTIVE MESH CONSTRAINT",
+		"body": "ADAPTIVE MESH CONSTRAINT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ADAPTIVE MESH CONSTRAINT keyword",
+		"scope": "source.abaqus"
+	},
+	"ADAPTIVE MESH CONTROLS": {
+		"prefix": "ADAPTIVE MESH CONTROLS",
+		"body": "ADAPTIVE MESH CONTROLS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ADAPTIVE MESH CONTROLS keyword",
+		"scope": "source.abaqus"
+	},
+	"ADAPTIVE MESH REFINEMENT": {
+		"prefix": "ADAPTIVE MESH REFINEMENT",
+		"body": "ADAPTIVE MESH REFINEMENT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ADAPTIVE MESH REFINEMENT keyword",
+		"scope": "source.abaqus"
+	},
+	"ADJUST": {
+		"prefix": "ADJUST",
+		"body": "ADJUST\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ADJUST keyword",
+		"scope": "source.abaqus"
+	},
 	"AMPLITUDE": {
 		"prefix": "AMPLITUDE",
 		"body": "AMPLITUDE, NAME=${1:amp_name}, DEFINITION=${2:TABULAR}\r\n${3:time1}, ${4:value1}\r\n${5:time2}, ${6:value2}",
 		"description": "AMPLITUDE Keyword",
+		"scope": "source.abaqus"
+	},
+	"ANISOTROPIC HYPERELASTIC": {
+		"prefix": "ANISOTROPIC HYPERELASTIC",
+		"body": "ANISOTROPIC HYPERELASTIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ANISOTROPIC HYPERELASTIC keyword",
+		"scope": "source.abaqus"
+	},
+	"ANNEAL": {
+		"prefix": "ANNEAL",
+		"body": "ANNEAL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ANNEAL keyword",
+		"scope": "source.abaqus"
+	},
+	"ANNEAL TEMPERATURE": {
+		"prefix": "ANNEAL TEMPERATURE",
+		"body": "ANNEAL TEMPERATURE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ANNEAL TEMPERATURE keyword",
+		"scope": "source.abaqus"
+	},
+	"AQUA": {
+		"prefix": "AQUA",
+		"body": "AQUA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "AQUA keyword",
 		"scope": "source.abaqus"
 	},
 	"ASSEMBLY": {
@@ -11,16 +89,70 @@
 		"description": "ASSEMBLY / END ASSEMBLY block",
 		"scope": "source.abaqus"
 	},
+	"ASYMMETRIC-AXISYMMETRIC": {
+		"prefix": "ASYMMETRIC-AXISYMMETRIC",
+		"body": "ASYMMETRIC-AXISYMMETRIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ASYMMETRIC-AXISYMMETRIC keyword",
+		"scope": "source.abaqus"
+	},
+	"AXIAL": {
+		"prefix": "AXIAL",
+		"body": "AXIAL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "AXIAL keyword",
+		"scope": "source.abaqus"
+	},
+	"BASE MOTION": {
+		"prefix": "BASE MOTION",
+		"body": "BASE MOTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "BASE MOTION keyword",
+		"scope": "source.abaqus"
+	},
+	"BASELINE CORRECTION": {
+		"prefix": "BASELINE CORRECTION",
+		"body": "BASELINE CORRECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "BASELINE CORRECTION keyword",
+		"scope": "source.abaqus"
+	},
+	"BEAM ADDED INERTIA": {
+		"prefix": "BEAM ADDED INERTIA",
+		"body": "BEAM ADDED INERTIA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "BEAM ADDED INERTIA keyword",
+		"scope": "source.abaqus"
+	},
+	"BEAM FLUID INERTIA": {
+		"prefix": "BEAM FLUID INERTIA",
+		"body": "BEAM FLUID INERTIA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "BEAM FLUID INERTIA keyword",
+		"scope": "source.abaqus"
+	},
 	"BEAM GENERAL SECTION": {
 		"prefix": "BEAM GENERAL SECTION",
 		"body": "BEAM GENERAL SECTION, ELSET=${1:elset_name}, SECTION=${2:CIRC}, DENSITY=${3:density}\r\n${4:section_geometry_data}\r\n${5:E}, ${6:G}",
 		"description": "BEAM GENERAL SECTION Keyword",
 		"scope": "source.abaqus"
 	},
+	"BEAM GENERAL SECTION, SECTION": {
+		"prefix": "BEAM GENERAL SECTION, SECTION",
+		"body": "This option is used to define the first bending moment behavior of beams. It can be used only in conjunction with the *BEAM GENERAL SECTION, SECTION=${1:section} GENERAL option.\\r\\n${2:Products: Abaqus/Standard  Abaqus/Explicit}",
+		"description": "Abaqus Keywords Reference Guide",
+		"scope": "source.abaqus"
+	},
 	"BEAM SECTION": {
 		"prefix": "BEAM SECTION",
 		"body": "BEAM SECTION, ELSET=${1:elset_name}, MATERIAL=${2:mat_name}, SECTION=${3:CIRC}\r\n${4:section_geometry_data}\r\n${5:0.}, ${6:0.}, ${7:-1.}",
 		"description": "BEAM SECTION Keyword",
+		"scope": "source.abaqus"
+	},
+	"BIAXIAL TEST DATA": {
+		"prefix": "BIAXIAL TEST DATA",
+		"body": "BIAXIAL TEST DATA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "BIAXIAL TEST DATA keyword",
+		"scope": "source.abaqus"
+	},
+	"BOND": {
+		"prefix": "BOND",
+		"body": "BOND\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "BOND keyword",
 		"scope": "source.abaqus"
 	},
 	"BOUNDARY": {
@@ -35,16 +167,388 @@
 		"description": "FIXED BOUNDARY Keyword",
 		"scope": "source.abaqus"
 	},
+	"BRITTLE CRACKING": {
+		"prefix": "BRITTLE CRACKING",
+		"body": "BRITTLE CRACKING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "BRITTLE CRACKING keyword",
+		"scope": "source.abaqus"
+	},
+	"BRITTLE FAILURE": {
+		"prefix": "BRITTLE FAILURE",
+		"body": "BRITTLE FAILURE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "BRITTLE FAILURE keyword",
+		"scope": "source.abaqus"
+	},
+	"BRITTLE SHEAR": {
+		"prefix": "BRITTLE SHEAR",
+		"body": "BRITTLE SHEAR\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "BRITTLE SHEAR keyword",
+		"scope": "source.abaqus"
+	},
 	"BUCKLE": {
 		"prefix": "BUCKLE",
 		"body": "STEP\r\n*BUCKLE, EIGENSOLVER=${1:LANCZOS}\r\n${2:num_eigenvalues}\r\n**\r\n*NODE OUTPUT\r\nU\r\n*END STEP",
 		"description": "BUCKLE eigenvalue step",
 		"scope": "source.abaqus"
 	},
+	"BUCKLING ENVELOPE": {
+		"prefix": "BUCKLING ENVELOPE",
+		"body": "BUCKLING ENVELOPE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "BUCKLING ENVELOPE keyword",
+		"scope": "source.abaqus"
+	},
+	"BUCKLING LENGTH": {
+		"prefix": "BUCKLING LENGTH",
+		"body": "BUCKLING LENGTH\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "BUCKLING LENGTH keyword",
+		"scope": "source.abaqus"
+	},
+	"BUCKLING REDUCTION FACTORS": {
+		"prefix": "BUCKLING REDUCTION FACTORS",
+		"body": "BUCKLING REDUCTION FACTORS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "BUCKLING REDUCTION FACTORS keyword",
+		"scope": "source.abaqus"
+	},
+	"BULK VISCOSITY": {
+		"prefix": "BULK VISCOSITY",
+		"body": "BULK VISCOSITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "BULK VISCOSITY keyword",
+		"scope": "source.abaqus"
+	},
+	"C ADDED MASS": {
+		"prefix": "C ADDED MASS",
+		"body": "C ADDED MASS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "C ADDED MASS keyword",
+		"scope": "source.abaqus"
+	},
+	"CAP CREEP": {
+		"prefix": "CAP CREEP",
+		"body": "CAP CREEP\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CAP CREEP keyword",
+		"scope": "source.abaqus"
+	},
+	"CAP HARDENING": {
+		"prefix": "CAP HARDENING",
+		"body": "CAP HARDENING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CAP HARDENING keyword",
+		"scope": "source.abaqus"
+	},
+	"CAP PLASTICITY": {
+		"prefix": "CAP PLASTICITY",
+		"body": "CAP PLASTICITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CAP PLASTICITY keyword",
+		"scope": "source.abaqus"
+	},
+	"CAPACITY": {
+		"prefix": "CAPACITY",
+		"body": "CAPACITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CAPACITY keyword",
+		"scope": "source.abaqus"
+	},
+	"CAST IRON COMPRESSION HARDENING": {
+		"prefix": "CAST IRON COMPRESSION HARDENING",
+		"body": "CAST IRON COMPRESSION HARDENING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CAST IRON COMPRESSION HARDENING keyword",
+		"scope": "source.abaqus"
+	},
+	"CAST IRON PLASTICITY": {
+		"prefix": "CAST IRON PLASTICITY",
+		"body": "CAST IRON PLASTICITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CAST IRON PLASTICITY keyword",
+		"scope": "source.abaqus"
+	},
+	"CAST IRON TENSION HARDENING": {
+		"prefix": "CAST IRON TENSION HARDENING",
+		"body": "CAST IRON TENSION HARDENING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CAST IRON TENSION HARDENING keyword",
+		"scope": "source.abaqus"
+	},
+	"CAVITY DEFINITION": {
+		"prefix": "CAVITY DEFINITION",
+		"body": "CAVITY DEFINITION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CAVITY DEFINITION keyword",
+		"scope": "source.abaqus"
+	},
+	"CECHARGE": {
+		"prefix": "CECHARGE",
+		"body": "CECHARGE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CECHARGE keyword",
+		"scope": "source.abaqus"
+	},
+	"CECURRENT": {
+		"prefix": "CECURRENT",
+		"body": "CECURRENT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CECURRENT keyword",
+		"scope": "source.abaqus"
+	},
+	"CENTROID": {
+		"prefix": "CENTROID",
+		"body": "CENTROID\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CENTROID keyword",
+		"scope": "source.abaqus"
+	},
+	"CFD": {
+		"prefix": "CFD",
+		"body": "CFD\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CFD keyword",
+		"scope": "source.abaqus"
+	},
+	"CFILM": {
+		"prefix": "CFILM",
+		"body": "CFILM\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CFILM keyword",
+		"scope": "source.abaqus"
+	},
+	"CFLOW": {
+		"prefix": "CFLOW",
+		"body": "CFLOW\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CFLOW keyword",
+		"scope": "source.abaqus"
+	},
+	"CFLUX": {
+		"prefix": "CFLUX",
+		"body": "CFLUX\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CFLUX keyword",
+		"scope": "source.abaqus"
+	},
+	"CHANGE FRICTION": {
+		"prefix": "CHANGE FRICTION",
+		"body": "CHANGE FRICTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CHANGE FRICTION keyword",
+		"scope": "source.abaqus"
+	},
+	"CHARACTERISTIC LENGTH": {
+		"prefix": "CHARACTERISTIC LENGTH",
+		"body": "CHARACTERISTIC LENGTH\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CHARACTERISTIC LENGTH keyword",
+		"scope": "source.abaqus"
+	},
+	"CLAY HARDENING": {
+		"prefix": "CLAY HARDENING",
+		"body": "CLAY HARDENING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CLAY HARDENING keyword",
+		"scope": "source.abaqus"
+	},
+	"CLAY PLASTICITY": {
+		"prefix": "CLAY PLASTICITY",
+		"body": "CLAY PLASTICITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CLAY PLASTICITY keyword",
+		"scope": "source.abaqus"
+	},
+	"CLEARANCE": {
+		"prefix": "CLEARANCE",
+		"body": "CLEARANCE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CLEARANCE keyword",
+		"scope": "source.abaqus"
+	},
 	"CLOAD": {
 		"prefix": "CLOAD",
 		"body": "CLOAD\r\n${1:node_set_label}, ${2:dof}, ${3:magnitude}",
 		"description": "CLOAD Concentrated Load Keyword",
+		"scope": "source.abaqus"
+	},
+	"CO-SIMULATION": {
+		"prefix": "CO-SIMULATION",
+		"body": "CO-SIMULATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CO-SIMULATION keyword",
+		"scope": "source.abaqus"
+	},
+	"CO-SIMULATION CONTROLS": {
+		"prefix": "CO-SIMULATION CONTROLS",
+		"body": "CO-SIMULATION CONTROLS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CO-SIMULATION CONTROLS keyword",
+		"scope": "source.abaqus"
+	},
+	"CO-SIMULATION REGION": {
+		"prefix": "CO-SIMULATION REGION",
+		"body": "CO-SIMULATION REGION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CO-SIMULATION REGION keyword",
+		"scope": "source.abaqus"
+	},
+	"COHESIVE BEHAVIOR": {
+		"prefix": "COHESIVE BEHAVIOR",
+		"body": "COHESIVE BEHAVIOR\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "COHESIVE BEHAVIOR keyword",
+		"scope": "source.abaqus"
+	},
+	"COHESIVE SECTION": {
+		"prefix": "COHESIVE SECTION",
+		"body": "COHESIVE SECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "COHESIVE SECTION keyword",
+		"scope": "source.abaqus"
+	},
+	"COMBINED TEST DATA": {
+		"prefix": "COMBINED TEST DATA",
+		"body": "COMBINED TEST DATA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "COMBINED TEST DATA keyword",
+		"scope": "source.abaqus"
+	},
+	"COMPLEX FREQUENCY": {
+		"prefix": "COMPLEX FREQUENCY",
+		"body": "COMPLEX FREQUENCY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "COMPLEX FREQUENCY keyword",
+		"scope": "source.abaqus"
+	},
+	"COMPOSITE MODAL DAMPING": {
+		"prefix": "COMPOSITE MODAL DAMPING",
+		"body": "COMPOSITE MODAL DAMPING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "COMPOSITE MODAL DAMPING keyword",
+		"scope": "source.abaqus"
+	},
+	"CONCRETE": {
+		"prefix": "CONCRETE",
+		"body": "CONCRETE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONCRETE keyword",
+		"scope": "source.abaqus"
+	},
+	"CONCRETE COMPRESSION DAMAGE": {
+		"prefix": "CONCRETE COMPRESSION DAMAGE",
+		"body": "CONCRETE COMPRESSION DAMAGE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONCRETE COMPRESSION DAMAGE keyword",
+		"scope": "source.abaqus"
+	},
+	"CONCRETE COMPRESSION HARDENING": {
+		"prefix": "CONCRETE COMPRESSION HARDENING",
+		"body": "CONCRETE COMPRESSION HARDENING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONCRETE COMPRESSION HARDENING keyword",
+		"scope": "source.abaqus"
+	},
+	"CONCRETE DAMAGED PLASTICITY": {
+		"prefix": "CONCRETE DAMAGED PLASTICITY",
+		"body": "CONCRETE DAMAGED PLASTICITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONCRETE DAMAGED PLASTICITY keyword",
+		"scope": "source.abaqus"
+	},
+	"CONCRETE TENSION DAMAGE": {
+		"prefix": "CONCRETE TENSION DAMAGE",
+		"body": "CONCRETE TENSION DAMAGE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONCRETE TENSION DAMAGE keyword",
+		"scope": "source.abaqus"
+	},
+	"CONCRETE TENSION STIFFENING": {
+		"prefix": "CONCRETE TENSION STIFFENING",
+		"body": "CONCRETE TENSION STIFFENING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONCRETE TENSION STIFFENING keyword",
+		"scope": "source.abaqus"
+	},
+	"CONDUCTIVITY": {
+		"prefix": "CONDUCTIVITY",
+		"body": "CONDUCTIVITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONDUCTIVITY keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR BEHAVIOR": {
+		"prefix": "CONNECTOR BEHAVIOR",
+		"body": "CONNECTOR BEHAVIOR\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR BEHAVIOR keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR CONSTITUTIVE REFERENCE": {
+		"prefix": "CONNECTOR CONSTITUTIVE REFERENCE",
+		"body": "CONNECTOR CONSTITUTIVE REFERENCE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR CONSTITUTIVE REFERENCE keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR DAMAGE EVOLUTION": {
+		"prefix": "CONNECTOR DAMAGE EVOLUTION",
+		"body": "CONNECTOR DAMAGE EVOLUTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR DAMAGE EVOLUTION keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR DAMAGE INITIATION": {
+		"prefix": "CONNECTOR DAMAGE INITIATION",
+		"body": "CONNECTOR DAMAGE INITIATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR DAMAGE INITIATION keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR DAMPING": {
+		"prefix": "CONNECTOR DAMPING",
+		"body": "CONNECTOR DAMPING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR DAMPING keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR DERIVED COMPONENT": {
+		"prefix": "CONNECTOR DERIVED COMPONENT",
+		"body": "CONNECTOR DERIVED COMPONENT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR DERIVED COMPONENT keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR ELASTICITY": {
+		"prefix": "CONNECTOR ELASTICITY",
+		"body": "CONNECTOR ELASTICITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR ELASTICITY keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR FAILURE": {
+		"prefix": "CONNECTOR FAILURE",
+		"body": "CONNECTOR FAILURE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR FAILURE keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR FRICTION": {
+		"prefix": "CONNECTOR FRICTION",
+		"body": "CONNECTOR FRICTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR FRICTION keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR HARDENING": {
+		"prefix": "CONNECTOR HARDENING",
+		"body": "CONNECTOR HARDENING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR HARDENING keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR LOAD": {
+		"prefix": "CONNECTOR LOAD",
+		"body": "CONNECTOR LOAD\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR LOAD keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR LOCK": {
+		"prefix": "CONNECTOR LOCK",
+		"body": "CONNECTOR LOCK\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR LOCK keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR MOTION": {
+		"prefix": "CONNECTOR MOTION",
+		"body": "CONNECTOR MOTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR MOTION keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR PLASTICITY": {
+		"prefix": "CONNECTOR PLASTICITY",
+		"body": "CONNECTOR PLASTICITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR PLASTICITY keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR POTENTIAL": {
+		"prefix": "CONNECTOR POTENTIAL",
+		"body": "CONNECTOR POTENTIAL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR POTENTIAL keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR SECTION": {
+		"prefix": "CONNECTOR SECTION",
+		"body": "CONNECTOR SECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR SECTION keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR STOP": {
+		"prefix": "CONNECTOR STOP",
+		"body": "CONNECTOR STOP\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR STOP keyword",
+		"scope": "source.abaqus"
+	},
+	"CONNECTOR UNIAXIAL BEHAVIOR": {
+		"prefix": "CONNECTOR UNIAXIAL BEHAVIOR",
+		"body": "CONNECTOR UNIAXIAL BEHAVIOR\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONNECTOR UNIAXIAL BEHAVIOR keyword",
+		"scope": "source.abaqus"
+	},
+	"CONSTRAINT CONTROLS": {
+		"prefix": "CONSTRAINT CONTROLS",
+		"body": "CONSTRAINT CONTROLS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONSTRAINT CONTROLS keyword",
 		"scope": "source.abaqus"
 	},
 	"CONTACT": {
@@ -59,10 +563,268 @@
 		"description": "CONTACT PAIR Keyword",
 		"scope": "source.abaqus"
 	},
+	"CONTOUR INTEGRAL": {
+		"prefix": "CONTOUR INTEGRAL",
+		"body": "CONTOUR INTEGRAL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONTOUR INTEGRAL keyword",
+		"scope": "source.abaqus"
+	},
+	"CONTROLS": {
+		"prefix": "CONTROLS",
+		"body": "CONTROLS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONTROLS keyword",
+		"scope": "source.abaqus"
+	},
+	"CONWEP CHARGE PROPERTY": {
+		"prefix": "CONWEP CHARGE PROPERTY",
+		"body": "CONWEP CHARGE PROPERTY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CONWEP CHARGE PROPERTY keyword",
+		"scope": "source.abaqus"
+	},
+	"CORRELATION": {
+		"prefix": "CORRELATION",
+		"body": "CORRELATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CORRELATION keyword",
+		"scope": "source.abaqus"
+	},
+	"COUPLED TEMPERATURE-DISPLACEMENT": {
+		"prefix": "COUPLED TEMPERATURE-DISPLACEMENT",
+		"body": "COUPLED TEMPERATURE-DISPLACEMENT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "COUPLED TEMPERATURE-DISPLACEMENT keyword",
+		"scope": "source.abaqus"
+	},
+	"COUPLED THERMAL-ELECTRICAL": {
+		"prefix": "COUPLED THERMAL-ELECTRICAL",
+		"body": "COUPLED THERMAL-ELECTRICAL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "COUPLED THERMAL-ELECTRICAL keyword",
+		"scope": "source.abaqus"
+	},
+	"COUPLING": {
+		"prefix": "COUPLING",
+		"body": "COUPLING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "COUPLING keyword",
+		"scope": "source.abaqus"
+	},
+	"CRADIATE": {
+		"prefix": "CRADIATE",
+		"body": "CRADIATE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CRADIATE keyword",
+		"scope": "source.abaqus"
+	},
+	"CREEP": {
+		"prefix": "CREEP",
+		"body": "CREEP\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CREEP keyword",
+		"scope": "source.abaqus"
+	},
+	"CREEP STRAIN RATE CONTROL": {
+		"prefix": "CREEP STRAIN RATE CONTROL",
+		"body": "CREEP STRAIN RATE CONTROL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CREEP STRAIN RATE CONTROL keyword",
+		"scope": "source.abaqus"
+	},
+	"CRUSHABLE FOAM": {
+		"prefix": "CRUSHABLE FOAM",
+		"body": "CRUSHABLE FOAM\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CRUSHABLE FOAM keyword",
+		"scope": "source.abaqus"
+	},
+	"CRUSHABLE FOAM HARDENING": {
+		"prefix": "CRUSHABLE FOAM HARDENING",
+		"body": "CRUSHABLE FOAM HARDENING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CRUSHABLE FOAM HARDENING keyword",
+		"scope": "source.abaqus"
+	},
+	"CYCLED PLASTIC": {
+		"prefix": "CYCLED PLASTIC",
+		"body": "CYCLED PLASTIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CYCLED PLASTIC keyword",
+		"scope": "source.abaqus"
+	},
+	"CYCLIC": {
+		"prefix": "CYCLIC",
+		"body": "CYCLIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CYCLIC keyword",
+		"scope": "source.abaqus"
+	},
+	"CYCLIC HARDENING": {
+		"prefix": "CYCLIC HARDENING",
+		"body": "CYCLIC HARDENING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CYCLIC HARDENING keyword",
+		"scope": "source.abaqus"
+	},
+	"CYCLIC SYMMETRY MODEL": {
+		"prefix": "CYCLIC SYMMETRY MODEL",
+		"body": "CYCLIC SYMMETRY MODEL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "CYCLIC SYMMETRY MODEL keyword",
+		"scope": "source.abaqus"
+	},
+	"D ADDED MASS": {
+		"prefix": "D ADDED MASS",
+		"body": "D ADDED MASS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "D ADDED MASS keyword",
+		"scope": "source.abaqus"
+	},
+	"D EM POTENTIAL": {
+		"prefix": "D EM POTENTIAL",
+		"body": "D EM POTENTIAL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "D EM POTENTIAL keyword",
+		"scope": "source.abaqus"
+	},
+	"DAMAGE EVOLUTION": {
+		"prefix": "DAMAGE EVOLUTION",
+		"body": "DAMAGE EVOLUTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DAMAGE EVOLUTION keyword",
+		"scope": "source.abaqus"
+	},
+	"DAMAGE INITIATION": {
+		"prefix": "DAMAGE INITIATION",
+		"body": "DAMAGE INITIATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DAMAGE INITIATION keyword",
+		"scope": "source.abaqus"
+	},
+	"DAMAGE STABILIZATION": {
+		"prefix": "DAMAGE STABILIZATION",
+		"body": "DAMAGE STABILIZATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DAMAGE STABILIZATION keyword",
+		"scope": "source.abaqus"
+	},
+	"DAMPING": {
+		"prefix": "DAMPING",
+		"body": "DAMPING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DAMPING keyword",
+		"scope": "source.abaqus"
+	},
+	"DAMPING CONTROLS": {
+		"prefix": "DAMPING CONTROLS",
+		"body": "DAMPING CONTROLS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DAMPING CONTROLS keyword",
+		"scope": "source.abaqus"
+	},
+	"DASHPOT": {
+		"prefix": "DASHPOT",
+		"body": "DASHPOT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DASHPOT keyword",
+		"scope": "source.abaqus"
+	},
+	"DEBOND": {
+		"prefix": "DEBOND",
+		"body": "DEBOND\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DEBOND keyword",
+		"scope": "source.abaqus"
+	},
+	"DECHARGE": {
+		"prefix": "DECHARGE",
+		"body": "DECHARGE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DECHARGE keyword",
+		"scope": "source.abaqus"
+	},
+	"DECURRENT": {
+		"prefix": "DECURRENT",
+		"body": "DECURRENT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DECURRENT keyword",
+		"scope": "source.abaqus"
+	},
+	"DEFORMATION PLASTICITY": {
+		"prefix": "DEFORMATION PLASTICITY",
+		"body": "DEFORMATION PLASTICITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DEFORMATION PLASTICITY keyword",
+		"scope": "source.abaqus"
+	},
 	"DENSITY": {
 		"prefix": "DENSITY",
 		"body": "DENSITY\r\n${1:density}",
 		"description": "DENSITY material property",
+		"scope": "source.abaqus"
+	},
+	"DEPVAR": {
+		"prefix": "DEPVAR",
+		"body": "DEPVAR\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DEPVAR keyword",
+		"scope": "source.abaqus"
+	},
+	"DESIGN GRADIENT": {
+		"prefix": "DESIGN GRADIENT",
+		"body": "DESIGN GRADIENT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DESIGN GRADIENT keyword",
+		"scope": "source.abaqus"
+	},
+	"DESIGN PARAMETER": {
+		"prefix": "DESIGN PARAMETER",
+		"body": "DESIGN PARAMETER\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DESIGN PARAMETER keyword",
+		"scope": "source.abaqus"
+	},
+	"DESIGN RESPONSE": {
+		"prefix": "DESIGN RESPONSE",
+		"body": "DESIGN RESPONSE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DESIGN RESPONSE keyword",
+		"scope": "source.abaqus"
+	},
+	"DETONATION POINT": {
+		"prefix": "DETONATION POINT",
+		"body": "DETONATION POINT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DETONATION POINT keyword",
+		"scope": "source.abaqus"
+	},
+	"DFLOW": {
+		"prefix": "DFLOW",
+		"body": "DFLOW\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DFLOW keyword",
+		"scope": "source.abaqus"
+	},
+	"DFLUX": {
+		"prefix": "DFLUX",
+		"body": "DFLUX\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DFLUX keyword",
+		"scope": "source.abaqus"
+	},
+	"DIAGNOSTICS": {
+		"prefix": "DIAGNOSTICS",
+		"body": "DIAGNOSTICS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DIAGNOSTICS keyword",
+		"scope": "source.abaqus"
+	},
+	"DIELECTRIC": {
+		"prefix": "DIELECTRIC",
+		"body": "DIELECTRIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DIELECTRIC keyword",
+		"scope": "source.abaqus"
+	},
+	"DIFFUSIVITY": {
+		"prefix": "DIFFUSIVITY",
+		"body": "DIFFUSIVITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DIFFUSIVITY keyword",
+		"scope": "source.abaqus"
+	},
+	"DIRECT CYCLIC": {
+		"prefix": "DIRECT CYCLIC",
+		"body": "DIRECT CYCLIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DIRECT CYCLIC keyword",
+		"scope": "source.abaqus"
+	},
+	"DISCRETE ELASTICITY": {
+		"prefix": "DISCRETE ELASTICITY",
+		"body": "DISCRETE ELASTICITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DISCRETE ELASTICITY keyword",
+		"scope": "source.abaqus"
+	},
+	"DISCRETE SECTION": {
+		"prefix": "DISCRETE SECTION",
+		"body": "DISCRETE SECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DISCRETE SECTION keyword",
+		"scope": "source.abaqus"
+	},
+	"DISPLAY BODY": {
+		"prefix": "DISPLAY BODY",
+		"body": "DISPLAY BODY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DISPLAY BODY keyword",
+		"scope": "source.abaqus"
+	},
+	"DISTRIBUTING": {
+		"prefix": "DISTRIBUTING",
+		"body": "DISTRIBUTING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DISTRIBUTING keyword",
 		"scope": "source.abaqus"
 	},
 	"DISTRIBUTING COUPLING": {
@@ -71,10 +833,88 @@
 		"description": "DISTRIBUTING COUPLING Keyword",
 		"scope": "source.abaqus"
 	},
+	"DISTRIBUTION": {
+		"prefix": "DISTRIBUTION",
+		"body": "DISTRIBUTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DISTRIBUTION keyword",
+		"scope": "source.abaqus"
+	},
+	"DISTRIBUTION TABLE": {
+		"prefix": "DISTRIBUTION TABLE",
+		"body": "DISTRIBUTION TABLE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DISTRIBUTION TABLE keyword",
+		"scope": "source.abaqus"
+	},
 	"DLOAD": {
 		"prefix": "DLOAD",
 		"body": "DLOAD\r\n${1:elset_name}, ${2:P${3:1}}, ${4:magnitude}",
 		"description": "DLOAD Distributed Load Keyword",
+		"scope": "source.abaqus"
+	},
+	"DOMAIN DECOMPOSITION": {
+		"prefix": "DOMAIN DECOMPOSITION",
+		"body": "DOMAIN DECOMPOSITION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DOMAIN DECOMPOSITION keyword",
+		"scope": "source.abaqus"
+	},
+	"DRAG CHAIN": {
+		"prefix": "DRAG CHAIN",
+		"body": "DRAG CHAIN\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DRAG CHAIN keyword",
+		"scope": "source.abaqus"
+	},
+	"DRUCKER PRAGER": {
+		"prefix": "DRUCKER PRAGER",
+		"body": "DRUCKER PRAGER\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DRUCKER PRAGER keyword",
+		"scope": "source.abaqus"
+	},
+	"DRUCKER PRAGER CREEP": {
+		"prefix": "DRUCKER PRAGER CREEP",
+		"body": "DRUCKER PRAGER CREEP\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DRUCKER PRAGER CREEP keyword",
+		"scope": "source.abaqus"
+	},
+	"DRUCKER PRAGER HARDENING": {
+		"prefix": "DRUCKER PRAGER HARDENING",
+		"body": "DRUCKER PRAGER HARDENING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DRUCKER PRAGER HARDENING keyword",
+		"scope": "source.abaqus"
+	},
+	"DSA CONTROLS": {
+		"prefix": "DSA CONTROLS",
+		"body": "DSA CONTROLS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DSA CONTROLS keyword",
+		"scope": "source.abaqus"
+	},
+	"DSECHARGE": {
+		"prefix": "DSECHARGE",
+		"body": "DSECHARGE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DSECHARGE keyword",
+		"scope": "source.abaqus"
+	},
+	"DSECURRENT": {
+		"prefix": "DSECURRENT",
+		"body": "DSECURRENT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DSECURRENT keyword",
+		"scope": "source.abaqus"
+	},
+	"DSFLOW": {
+		"prefix": "DSFLOW",
+		"body": "DSFLOW\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DSFLOW keyword",
+		"scope": "source.abaqus"
+	},
+	"DSFLUX": {
+		"prefix": "DSFLUX",
+		"body": "DSFLUX\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DSFLUX keyword",
+		"scope": "source.abaqus"
+	},
+	"DSLOAD": {
+		"prefix": "DSLOAD",
+		"body": "DSLOAD\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "DSLOAD keyword",
 		"scope": "source.abaqus"
 	},
 	"DYNAMIC EXPLICIT": {
@@ -89,10 +929,40 @@
 		"description": "DYNAMIC IMPLICIT full step",
 		"scope": "source.abaqus"
 	},
+	"EL FILE": {
+		"prefix": "EL FILE",
+		"body": "EL FILE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "EL FILE keyword",
+		"scope": "source.abaqus"
+	},
+	"EL PRINT": {
+		"prefix": "EL PRINT",
+		"body": "EL PRINT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "EL PRINT keyword",
+		"scope": "source.abaqus"
+	},
 	"ELASTIC": {
 		"prefix": "ELASTIC",
 		"body": "ELASTIC, TYPE=${1:ISOTROPIC}\r\n${2:E}, ${3:nu}",
 		"description": "ELASTIC material property",
+		"scope": "source.abaqus"
+	},
+	"ELCOPY": {
+		"prefix": "ELCOPY",
+		"body": "ELCOPY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ELCOPY keyword",
+		"scope": "source.abaqus"
+	},
+	"ELECTRICAL CONDUCTIVITY": {
+		"prefix": "ELECTRICAL CONDUCTIVITY",
+		"body": "ELECTRICAL CONDUCTIVITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ELECTRICAL CONDUCTIVITY keyword",
+		"scope": "source.abaqus"
+	},
+	"ELECTROMAGNETIC": {
+		"prefix": "ELECTROMAGNETIC",
+		"body": "ELECTROMAGNETIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ELECTROMAGNETIC keyword",
 		"scope": "source.abaqus"
 	},
 	"ELEMENT": {
@@ -107,10 +977,82 @@
 		"description": "ELEMENT OUTPUT request",
 		"scope": "source.abaqus"
 	},
+	"ELGEN": {
+		"prefix": "ELGEN",
+		"body": "ELGEN\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ELGEN keyword",
+		"scope": "source.abaqus"
+	},
 	"ELSET": {
 		"prefix": "ELSET",
 		"body": "ELSET, ELSET=${1:set_name}${2:, GENERATE}\r\n${3:e1}, ${4:e2}, ${5:increment}",
 		"description": "ELSET Element Set Definition",
+		"scope": "source.abaqus"
+	},
+	"EMBEDDED ELEMENT": {
+		"prefix": "EMBEDDED ELEMENT",
+		"body": "EMBEDDED ELEMENT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "EMBEDDED ELEMENT keyword",
+		"scope": "source.abaqus"
+	},
+	"EMISSIVITY": {
+		"prefix": "EMISSIVITY",
+		"body": "EMISSIVITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "EMISSIVITY keyword",
+		"scope": "source.abaqus"
+	},
+	"ENERGY EQUATION SOLVER": {
+		"prefix": "ENERGY EQUATION SOLVER",
+		"body": "ENERGY EQUATION SOLVER\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ENERGY EQUATION SOLVER keyword",
+		"scope": "source.abaqus"
+	},
+	"ENERGY FILE": {
+		"prefix": "ENERGY FILE",
+		"body": "ENERGY FILE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ENERGY FILE keyword",
+		"scope": "source.abaqus"
+	},
+	"ENERGY OUTPUT": {
+		"prefix": "ENERGY OUTPUT",
+		"body": "ENERGY OUTPUT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ENERGY OUTPUT keyword",
+		"scope": "source.abaqus"
+	},
+	"ENERGY PRINT": {
+		"prefix": "ENERGY PRINT",
+		"body": "ENERGY PRINT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ENERGY PRINT keyword",
+		"scope": "source.abaqus"
+	},
+	"ENRICHMENT": {
+		"prefix": "ENRICHMENT",
+		"body": "ENRICHMENT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ENRICHMENT keyword",
+		"scope": "source.abaqus"
+	},
+	"ENRICHMENT ACTIVATION": {
+		"prefix": "ENRICHMENT ACTIVATION",
+		"body": "ENRICHMENT ACTIVATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ENRICHMENT ACTIVATION keyword",
+		"scope": "source.abaqus"
+	},
+	"EOS": {
+		"prefix": "EOS",
+		"body": "EOS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "EOS keyword",
+		"scope": "source.abaqus"
+	},
+	"EOS COMPACTION": {
+		"prefix": "EOS COMPACTION",
+		"body": "EOS COMPACTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "EOS COMPACTION keyword",
+		"scope": "source.abaqus"
+	},
+	"EPJOINT": {
+		"prefix": "EPJOINT",
+		"body": "EPJOINT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "EPJOINT keyword",
 		"scope": "source.abaqus"
 	},
 	"EQUATION": {
@@ -119,10 +1061,274 @@
 		"description": "EQUATION linear multi-point constraint",
 		"scope": "source.abaqus"
 	},
+	"EULERIAN BOUNDARY": {
+		"prefix": "EULERIAN BOUNDARY",
+		"body": "EULERIAN BOUNDARY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "EULERIAN BOUNDARY keyword",
+		"scope": "source.abaqus"
+	},
+	"EULERIAN MESH MOTION": {
+		"prefix": "EULERIAN MESH MOTION",
+		"body": "EULERIAN MESH MOTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "EULERIAN MESH MOTION keyword",
+		"scope": "source.abaqus"
+	},
+	"EULERIAN SECTION": {
+		"prefix": "EULERIAN SECTION",
+		"body": "EULERIAN SECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "EULERIAN SECTION keyword",
+		"scope": "source.abaqus"
+	},
 	"EXPANSION": {
 		"prefix": "EXPANSION",
 		"body": "EXPANSION, TYPE=${1:ISOTROPIC}\r\n${2:alpha}",
 		"description": "EXPANSION thermal expansion coefficient",
+		"scope": "source.abaqus"
+	},
+	"EXTREME ELEMENT VALUE": {
+		"prefix": "EXTREME ELEMENT VALUE",
+		"body": "EXTREME ELEMENT VALUE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "EXTREME ELEMENT VALUE keyword",
+		"scope": "source.abaqus"
+	},
+	"EXTREME NODE VALUE": {
+		"prefix": "EXTREME NODE VALUE",
+		"body": "EXTREME NODE VALUE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "EXTREME NODE VALUE keyword",
+		"scope": "source.abaqus"
+	},
+	"EXTREME VALUE": {
+		"prefix": "EXTREME VALUE",
+		"body": "EXTREME VALUE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "EXTREME VALUE keyword",
+		"scope": "source.abaqus"
+	},
+	"FABRIC": {
+		"prefix": "FABRIC",
+		"body": "FABRIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FABRIC keyword",
+		"scope": "source.abaqus"
+	},
+	"FAIL STRAIN": {
+		"prefix": "FAIL STRAIN",
+		"body": "FAIL STRAIN\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FAIL STRAIN keyword",
+		"scope": "source.abaqus"
+	},
+	"FAIL STRESS": {
+		"prefix": "FAIL STRESS",
+		"body": "FAIL STRESS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FAIL STRESS keyword",
+		"scope": "source.abaqus"
+	},
+	"FAILURE RATIOS": {
+		"prefix": "FAILURE RATIOS",
+		"body": "FAILURE RATIOS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FAILURE RATIOS keyword",
+		"scope": "source.abaqus"
+	},
+	"FASTENER": {
+		"prefix": "FASTENER",
+		"body": "FASTENER\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FASTENER keyword",
+		"scope": "source.abaqus"
+	},
+	"FASTENER PROPERTY": {
+		"prefix": "FASTENER PROPERTY",
+		"body": "FASTENER PROPERTY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FASTENER PROPERTY keyword",
+		"scope": "source.abaqus"
+	},
+	"FIELD": {
+		"prefix": "FIELD",
+		"body": "FIELD\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FIELD keyword",
+		"scope": "source.abaqus"
+	},
+	"FILE FORMAT": {
+		"prefix": "FILE FORMAT",
+		"body": "FILE FORMAT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FILE FORMAT keyword",
+		"scope": "source.abaqus"
+	},
+	"FILE OUTPUT": {
+		"prefix": "FILE OUTPUT",
+		"body": "FILE OUTPUT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FILE OUTPUT keyword",
+		"scope": "source.abaqus"
+	},
+	"FILM": {
+		"prefix": "FILM",
+		"body": "FILM\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FILM keyword",
+		"scope": "source.abaqus"
+	},
+	"FILM PROPERTY": {
+		"prefix": "FILM PROPERTY",
+		"body": "FILM PROPERTY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FILM PROPERTY keyword",
+		"scope": "source.abaqus"
+	},
+	"FILTER": {
+		"prefix": "FILTER",
+		"body": "FILTER\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FILTER keyword",
+		"scope": "source.abaqus"
+	},
+	"FIXED MASS SCALING": {
+		"prefix": "FIXED MASS SCALING",
+		"body": "FIXED MASS SCALING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FIXED MASS SCALING keyword",
+		"scope": "source.abaqus"
+	},
+	"FLEXIBLE BODY": {
+		"prefix": "FLEXIBLE BODY",
+		"body": "FLEXIBLE BODY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLEXIBLE BODY keyword",
+		"scope": "source.abaqus"
+	},
+	"FLOW": {
+		"prefix": "FLOW",
+		"body": "FLOW\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLOW keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID BEHAVIOR": {
+		"prefix": "FLUID BEHAVIOR",
+		"body": "FLUID BEHAVIOR\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID BEHAVIOR keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID BOUNDARY": {
+		"prefix": "FLUID BOUNDARY",
+		"body": "FLUID BOUNDARY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID BOUNDARY keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID BULK MODULUS": {
+		"prefix": "FLUID BULK MODULUS",
+		"body": "FLUID BULK MODULUS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID BULK MODULUS keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID CAVITY": {
+		"prefix": "FLUID CAVITY",
+		"body": "FLUID CAVITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID CAVITY keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID DENSITY": {
+		"prefix": "FLUID DENSITY",
+		"body": "FLUID DENSITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID DENSITY keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID EXCHANGE": {
+		"prefix": "FLUID EXCHANGE",
+		"body": "FLUID EXCHANGE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID EXCHANGE keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID EXCHANGE ACTIVATION": {
+		"prefix": "FLUID EXCHANGE ACTIVATION",
+		"body": "FLUID EXCHANGE ACTIVATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID EXCHANGE ACTIVATION keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID EXCHANGE PROPERTY": {
+		"prefix": "FLUID EXCHANGE PROPERTY",
+		"body": "FLUID EXCHANGE PROPERTY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID EXCHANGE PROPERTY keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID EXPANSION": {
+		"prefix": "FLUID EXPANSION",
+		"body": "FLUID EXPANSION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID EXPANSION keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID FLUX": {
+		"prefix": "FLUID FLUX",
+		"body": "FLUID FLUX\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID FLUX keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID INFLATOR": {
+		"prefix": "FLUID INFLATOR",
+		"body": "FLUID INFLATOR\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID INFLATOR keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID INFLATOR ACTIVATION": {
+		"prefix": "FLUID INFLATOR ACTIVATION",
+		"body": "FLUID INFLATOR ACTIVATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID INFLATOR ACTIVATION keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID INFLATOR MIXTURE": {
+		"prefix": "FLUID INFLATOR MIXTURE",
+		"body": "FLUID INFLATOR MIXTURE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID INFLATOR MIXTURE keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID INFLATOR PROPERTY": {
+		"prefix": "FLUID INFLATOR PROPERTY",
+		"body": "FLUID INFLATOR PROPERTY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID INFLATOR PROPERTY keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID LEAKOFF": {
+		"prefix": "FLUID LEAKOFF",
+		"body": "FLUID LEAKOFF\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID LEAKOFF keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID PIPE CONNECTOR LOSS": {
+		"prefix": "FLUID PIPE CONNECTOR LOSS",
+		"body": "FLUID PIPE CONNECTOR LOSS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID PIPE CONNECTOR LOSS keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID PIPE CONNECTOR SECTION": {
+		"prefix": "FLUID PIPE CONNECTOR SECTION",
+		"body": "FLUID PIPE CONNECTOR SECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID PIPE CONNECTOR SECTION keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID PIPE FLOW LOSS": {
+		"prefix": "FLUID PIPE FLOW LOSS",
+		"body": "FLUID PIPE FLOW LOSS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID PIPE FLOW LOSS keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID PIPE SECTION": {
+		"prefix": "FLUID PIPE SECTION",
+		"body": "FLUID PIPE SECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID PIPE SECTION keyword",
+		"scope": "source.abaqus"
+	},
+	"FLUID SECTION": {
+		"prefix": "FLUID SECTION",
+		"body": "FLUID SECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FLUID SECTION keyword",
+		"scope": "source.abaqus"
+	},
+	"FOUNDATION": {
+		"prefix": "FOUNDATION",
+		"body": "FOUNDATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FOUNDATION keyword",
+		"scope": "source.abaqus"
+	},
+	"FRACTURE CRITERION": {
+		"prefix": "FRACTURE CRITERION",
+		"body": "FRACTURE CRITERION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FRACTURE CRITERION keyword",
+		"scope": "source.abaqus"
+	},
+	"FRAME SECTION": {
+		"prefix": "FRAME SECTION",
+		"body": "FRAME SECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "FRAME SECTION keyword",
 		"scope": "source.abaqus"
 	},
 	"FREQUENCY": {
@@ -137,6 +1343,96 @@
 		"description": "FRICTION contact property",
 		"scope": "source.abaqus"
 	},
+	"GAP": {
+		"prefix": "GAP",
+		"body": "GAP\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "GAP keyword",
+		"scope": "source.abaqus"
+	},
+	"GAP CONDUCTANCE": {
+		"prefix": "GAP CONDUCTANCE",
+		"body": "GAP CONDUCTANCE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "GAP CONDUCTANCE keyword",
+		"scope": "source.abaqus"
+	},
+	"GAP ELECTRICAL CONDUCTANCE": {
+		"prefix": "GAP ELECTRICAL CONDUCTANCE",
+		"body": "GAP ELECTRICAL CONDUCTANCE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "GAP ELECTRICAL CONDUCTANCE keyword",
+		"scope": "source.abaqus"
+	},
+	"GAP FLOW": {
+		"prefix": "GAP FLOW",
+		"body": "GAP FLOW\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "GAP FLOW keyword",
+		"scope": "source.abaqus"
+	},
+	"GAP HEAT GENERATION": {
+		"prefix": "GAP HEAT GENERATION",
+		"body": "GAP HEAT GENERATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "GAP HEAT GENERATION keyword",
+		"scope": "source.abaqus"
+	},
+	"GAP RADIATION": {
+		"prefix": "GAP RADIATION",
+		"body": "GAP RADIATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "GAP RADIATION keyword",
+		"scope": "source.abaqus"
+	},
+	"GAS SPECIFIC HEAT": {
+		"prefix": "GAS SPECIFIC HEAT",
+		"body": "GAS SPECIFIC HEAT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "GAS SPECIFIC HEAT keyword",
+		"scope": "source.abaqus"
+	},
+	"GASKET BEHAVIOR": {
+		"prefix": "GASKET BEHAVIOR",
+		"body": "GASKET BEHAVIOR\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "GASKET BEHAVIOR keyword",
+		"scope": "source.abaqus"
+	},
+	"GASKET CONTACT AREA": {
+		"prefix": "GASKET CONTACT AREA",
+		"body": "GASKET CONTACT AREA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "GASKET CONTACT AREA keyword",
+		"scope": "source.abaqus"
+	},
+	"GASKET ELASTICITY": {
+		"prefix": "GASKET ELASTICITY",
+		"body": "GASKET ELASTICITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "GASKET ELASTICITY keyword",
+		"scope": "source.abaqus"
+	},
+	"GASKET SECTION": {
+		"prefix": "GASKET SECTION",
+		"body": "GASKET SECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "GASKET SECTION keyword",
+		"scope": "source.abaqus"
+	},
+	"GASKET THICKNESS BEHAVIOR": {
+		"prefix": "GASKET THICKNESS BEHAVIOR",
+		"body": "GASKET THICKNESS BEHAVIOR\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "GASKET THICKNESS BEHAVIOR keyword",
+		"scope": "source.abaqus"
+	},
+	"GEL": {
+		"prefix": "GEL",
+		"body": "GEL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "GEL keyword",
+		"scope": "source.abaqus"
+	},
+	"GEOSTATIC": {
+		"prefix": "GEOSTATIC",
+		"body": "GEOSTATIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "GEOSTATIC keyword",
+		"scope": "source.abaqus"
+	},
+	"GLOBAL DAMPING": {
+		"prefix": "GLOBAL DAMPING",
+		"body": "GLOBAL DAMPING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "GLOBAL DAMPING keyword",
+		"scope": "source.abaqus"
+	},
 	"HEADING": {
 		"prefix": "HEADING",
 		"body": "HEADING\r\n${1:Model description}",
@@ -149,10 +1445,142 @@
 		"description": "HEAT TRANSFER steady-state step",
 		"scope": "source.abaqus"
 	},
+	"HEATCAP": {
+		"prefix": "HEATCAP",
+		"body": "HEATCAP\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "HEATCAP keyword",
+		"scope": "source.abaqus"
+	},
+	"HOURGLASS STIFFNESS": {
+		"prefix": "HOURGLASS STIFFNESS",
+		"body": "HOURGLASS STIFFNESS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "HOURGLASS STIFFNESS keyword",
+		"scope": "source.abaqus"
+	},
+	"HYPERELASTIC": {
+		"prefix": "HYPERELASTIC",
+		"body": "HYPERELASTIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "HYPERELASTIC keyword",
+		"scope": "source.abaqus"
+	},
+	"HYPERFOAM": {
+		"prefix": "HYPERFOAM",
+		"body": "HYPERFOAM\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "HYPERFOAM keyword",
+		"scope": "source.abaqus"
+	},
+	"HYPOELASTIC": {
+		"prefix": "HYPOELASTIC",
+		"body": "HYPOELASTIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "HYPOELASTIC keyword",
+		"scope": "source.abaqus"
+	},
+	"HYSTERESIS": {
+		"prefix": "HYSTERESIS",
+		"body": "HYSTERESIS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "HYSTERESIS keyword",
+		"scope": "source.abaqus"
+	},
+	"IMPEDANCE": {
+		"prefix": "IMPEDANCE",
+		"body": "IMPEDANCE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "IMPEDANCE keyword",
+		"scope": "source.abaqus"
+	},
+	"IMPEDANCE PROPERTY": {
+		"prefix": "IMPEDANCE PROPERTY",
+		"body": "IMPEDANCE PROPERTY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "IMPEDANCE PROPERTY keyword",
+		"scope": "source.abaqus"
+	},
+	"IMPERFECTION": {
+		"prefix": "IMPERFECTION",
+		"body": "IMPERFECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "IMPERFECTION keyword",
+		"scope": "source.abaqus"
+	},
+	"IMPORT": {
+		"prefix": "IMPORT",
+		"body": "IMPORT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "IMPORT keyword",
+		"scope": "source.abaqus"
+	},
+	"IMPORT CONTROLS": {
+		"prefix": "IMPORT CONTROLS",
+		"body": "IMPORT CONTROLS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "IMPORT CONTROLS keyword",
+		"scope": "source.abaqus"
+	},
+	"IMPORT ELSET": {
+		"prefix": "IMPORT ELSET",
+		"body": "IMPORT ELSET\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "IMPORT ELSET keyword",
+		"scope": "source.abaqus"
+	},
+	"IMPORT NSET": {
+		"prefix": "IMPORT NSET",
+		"body": "IMPORT NSET\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "IMPORT NSET keyword",
+		"scope": "source.abaqus"
+	},
+	"INCIDENT WAVE": {
+		"prefix": "INCIDENT WAVE",
+		"body": "INCIDENT WAVE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "INCIDENT WAVE keyword",
+		"scope": "source.abaqus"
+	},
+	"INCIDENT WAVE FLUID PROPERTY": {
+		"prefix": "INCIDENT WAVE FLUID PROPERTY",
+		"body": "INCIDENT WAVE FLUID PROPERTY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "INCIDENT WAVE FLUID PROPERTY keyword",
+		"scope": "source.abaqus"
+	},
+	"INCIDENT WAVE INTERACTION": {
+		"prefix": "INCIDENT WAVE INTERACTION",
+		"body": "INCIDENT WAVE INTERACTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "INCIDENT WAVE INTERACTION keyword",
+		"scope": "source.abaqus"
+	},
+	"INCIDENT WAVE INTERACTION PROPERTY": {
+		"prefix": "INCIDENT WAVE INTERACTION PROPERTY",
+		"body": "INCIDENT WAVE INTERACTION PROPERTY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "INCIDENT WAVE INTERACTION PROPERTY keyword",
+		"scope": "source.abaqus"
+	},
+	"INCIDENT WAVE PROPERTY": {
+		"prefix": "INCIDENT WAVE PROPERTY",
+		"body": "INCIDENT WAVE PROPERTY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "INCIDENT WAVE PROPERTY keyword",
+		"scope": "source.abaqus"
+	},
+	"INCIDENT WAVE REFLECTION": {
+		"prefix": "INCIDENT WAVE REFLECTION",
+		"body": "INCIDENT WAVE REFLECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "INCIDENT WAVE REFLECTION keyword",
+		"scope": "source.abaqus"
+	},
 	"INCLUDE": {
 		"prefix": "INCLUDE",
 		"body": "INCLUDE, INPUT=${1:include_file.inc}",
 		"description": "INCLUDE Keyword",
+		"scope": "source.abaqus"
+	},
+	"INCREMENTATION OUTPUT": {
+		"prefix": "INCREMENTATION OUTPUT",
+		"body": "INCREMENTATION OUTPUT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "INCREMENTATION OUTPUT keyword",
+		"scope": "source.abaqus"
+	},
+	"INELASTIC HEAT FRACTION": {
+		"prefix": "INELASTIC HEAT FRACTION",
+		"body": "INELASTIC HEAT FRACTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "INELASTIC HEAT FRACTION keyword",
+		"scope": "source.abaqus"
+	},
+	"INERTIA RELIEF": {
+		"prefix": "INERTIA RELIEF",
+		"body": "INERTIA RELIEF\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "INERTIA RELIEF keyword",
 		"scope": "source.abaqus"
 	},
 	"INITIAL CONDITIONS STRESS": {
@@ -173,10 +1601,76 @@
 		"description": "INSTANCE / END INSTANCE block",
 		"scope": "source.abaqus"
 	},
+	"INTEGRATED OUTPUT": {
+		"prefix": "INTEGRATED OUTPUT",
+		"body": "INTEGRATED OUTPUT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "INTEGRATED OUTPUT keyword",
+		"scope": "source.abaqus"
+	},
+	"INTEGRATED OUTPUT SECTION": {
+		"prefix": "INTEGRATED OUTPUT SECTION",
+		"body": "INTEGRATED OUTPUT SECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "INTEGRATED OUTPUT SECTION keyword",
+		"scope": "source.abaqus"
+	},
 	"INTERACTION": {
 		"prefix": "INTERACTION",
 		"body": "SURFACE INTERACTION, NAME=${1:int_name}\r\n*FRICTION\r\n${2:0.}",
 		"description": "SURFACE INTERACTION with FRICTION",
+		"scope": "source.abaqus"
+	},
+	"INTERFACE": {
+		"prefix": "INTERFACE",
+		"body": "INTERFACE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "INTERFACE keyword",
+		"scope": "source.abaqus"
+	},
+	"ITS": {
+		"prefix": "ITS",
+		"body": "ITS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ITS keyword",
+		"scope": "source.abaqus"
+	},
+	"JOINT": {
+		"prefix": "JOINT",
+		"body": "JOINT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "JOINT keyword",
+		"scope": "source.abaqus"
+	},
+	"JOINT ELASTICITY": {
+		"prefix": "JOINT ELASTICITY",
+		"body": "JOINT ELASTICITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "JOINT ELASTICITY keyword",
+		"scope": "source.abaqus"
+	},
+	"JOINT PLASTICITY": {
+		"prefix": "JOINT PLASTICITY",
+		"body": "JOINT PLASTICITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "JOINT PLASTICITY keyword",
+		"scope": "source.abaqus"
+	},
+	"JOINTED MATERIAL": {
+		"prefix": "JOINTED MATERIAL",
+		"body": "JOINTED MATERIAL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "JOINTED MATERIAL keyword",
+		"scope": "source.abaqus"
+	},
+	"JOULE HEAT FRACTION": {
+		"prefix": "JOULE HEAT FRACTION",
+		"body": "JOULE HEAT FRACTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "JOULE HEAT FRACTION keyword",
+		"scope": "source.abaqus"
+	},
+	"KAPPA": {
+		"prefix": "KAPPA",
+		"body": "KAPPA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "KAPPA keyword",
+		"scope": "source.abaqus"
+	},
+	"KINEMATIC": {
+		"prefix": "KINEMATIC",
+		"body": "KINEMATIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "KINEMATIC keyword",
 		"scope": "source.abaqus"
 	},
 	"KINEMATIC COUPLING": {
@@ -185,16 +1679,256 @@
 		"description": "KINEMATIC COUPLING Keyword",
 		"scope": "source.abaqus"
 	},
+	"LATENT HEAT": {
+		"prefix": "LATENT HEAT",
+		"body": "LATENT HEAT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "LATENT HEAT keyword",
+		"scope": "source.abaqus"
+	},
+	"LOAD CASE": {
+		"prefix": "LOAD CASE",
+		"body": "LOAD CASE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "LOAD CASE keyword",
+		"scope": "source.abaqus"
+	},
+	"LOADING DATA": {
+		"prefix": "LOADING DATA",
+		"body": "LOADING DATA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "LOADING DATA keyword",
+		"scope": "source.abaqus"
+	},
+	"LOW DENSITY FOAM": {
+		"prefix": "LOW DENSITY FOAM",
+		"body": "LOW DENSITY FOAM\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "LOW DENSITY FOAM keyword",
+		"scope": "source.abaqus"
+	},
+	"MAGNETIC PERMEABILITY": {
+		"prefix": "MAGNETIC PERMEABILITY",
+		"body": "MAGNETIC PERMEABILITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MAGNETIC PERMEABILITY keyword",
+		"scope": "source.abaqus"
+	},
+	"MAGNETOSTATIC": {
+		"prefix": "MAGNETOSTATIC",
+		"body": "MAGNETOSTATIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MAGNETOSTATIC keyword",
+		"scope": "source.abaqus"
+	},
+	"MAP SOLUTION": {
+		"prefix": "MAP SOLUTION",
+		"body": "MAP SOLUTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MAP SOLUTION keyword",
+		"scope": "source.abaqus"
+	},
+	"MASS": {
+		"prefix": "MASS",
+		"body": "MASS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MASS keyword",
+		"scope": "source.abaqus"
+	},
+	"MASS ADJUST": {
+		"prefix": "MASS ADJUST",
+		"body": "MASS ADJUST\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MASS ADJUST keyword",
+		"scope": "source.abaqus"
+	},
+	"MASS DIFFUSION": {
+		"prefix": "MASS DIFFUSION",
+		"body": "MASS DIFFUSION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MASS DIFFUSION keyword",
+		"scope": "source.abaqus"
+	},
+	"MASS FLOW RATE": {
+		"prefix": "MASS FLOW RATE",
+		"body": "MASS FLOW RATE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MASS FLOW RATE keyword",
+		"scope": "source.abaqus"
+	},
 	"MATERIAL": {
 		"prefix": "MATERIAL",
 		"body": "MATERIAL, NAME=${1:mat_name}\r\n*DENSITY\r\n${2:density}\r\n*ELASTIC\r\n${3:E}, ${4:nu}",
 		"description": "MATERIAL block with DENSITY and ELASTIC",
 		"scope": "source.abaqus"
 	},
+	"MATRIX": {
+		"prefix": "MATRIX",
+		"body": "MATRIX\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MATRIX keyword",
+		"scope": "source.abaqus"
+	},
+	"MATRIX ASSEMBLE": {
+		"prefix": "MATRIX ASSEMBLE",
+		"body": "MATRIX ASSEMBLE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MATRIX ASSEMBLE keyword",
+		"scope": "source.abaqus"
+	},
+	"MATRIX CHECK": {
+		"prefix": "MATRIX CHECK",
+		"body": "MATRIX CHECK\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MATRIX CHECK keyword",
+		"scope": "source.abaqus"
+	},
+	"MATRIX GENERATE": {
+		"prefix": "MATRIX GENERATE",
+		"body": "MATRIX GENERATE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MATRIX GENERATE keyword",
+		"scope": "source.abaqus"
+	},
+	"MATRIX INPUT": {
+		"prefix": "MATRIX INPUT",
+		"body": "MATRIX INPUT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MATRIX INPUT keyword",
+		"scope": "source.abaqus"
+	},
+	"MATRIX OUTPUT": {
+		"prefix": "MATRIX OUTPUT",
+		"body": "MATRIX OUTPUT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MATRIX OUTPUT keyword",
+		"scope": "source.abaqus"
+	},
+	"MEDIA TRANSPORT": {
+		"prefix": "MEDIA TRANSPORT",
+		"body": "MEDIA TRANSPORT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MEDIA TRANSPORT keyword",
+		"scope": "source.abaqus"
+	},
+	"MEMBRANE SECTION": {
+		"prefix": "MEMBRANE SECTION",
+		"body": "MEMBRANE SECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MEMBRANE SECTION keyword",
+		"scope": "source.abaqus"
+	},
+	"MODAL DAMPING": {
+		"prefix": "MODAL DAMPING",
+		"body": "MODAL DAMPING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MODAL DAMPING keyword",
+		"scope": "source.abaqus"
+	},
+	"MODAL DYNAMIC": {
+		"prefix": "MODAL DYNAMIC",
+		"body": "MODAL DYNAMIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MODAL DYNAMIC keyword",
+		"scope": "source.abaqus"
+	},
+	"MODAL FILE": {
+		"prefix": "MODAL FILE",
+		"body": "MODAL FILE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MODAL FILE keyword",
+		"scope": "source.abaqus"
+	},
+	"MODAL OUTPUT": {
+		"prefix": "MODAL OUTPUT",
+		"body": "MODAL OUTPUT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MODAL OUTPUT keyword",
+		"scope": "source.abaqus"
+	},
+	"MODAL PRINT": {
+		"prefix": "MODAL PRINT",
+		"body": "MODAL PRINT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MODAL PRINT keyword",
+		"scope": "source.abaqus"
+	},
+	"MODEL CHANGE": {
+		"prefix": "MODEL CHANGE",
+		"body": "MODEL CHANGE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MODEL CHANGE keyword",
+		"scope": "source.abaqus"
+	},
+	"MOHR COULOMB": {
+		"prefix": "MOHR COULOMB",
+		"body": "MOHR COULOMB\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MOHR COULOMB keyword",
+		"scope": "source.abaqus"
+	},
+	"MOHR COULOMB HARDENING": {
+		"prefix": "MOHR COULOMB HARDENING",
+		"body": "MOHR COULOMB HARDENING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MOHR COULOMB HARDENING keyword",
+		"scope": "source.abaqus"
+	},
+	"MOISTURE SWELLING": {
+		"prefix": "MOISTURE SWELLING",
+		"body": "MOISTURE SWELLING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MOISTURE SWELLING keyword",
+		"scope": "source.abaqus"
+	},
+	"MOLECULAR WEIGHT": {
+		"prefix": "MOLECULAR WEIGHT",
+		"body": "MOLECULAR WEIGHT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MOLECULAR WEIGHT keyword",
+		"scope": "source.abaqus"
+	},
+	"MOMENTUM EQUATION SOLVER": {
+		"prefix": "MOMENTUM EQUATION SOLVER",
+		"body": "MOMENTUM EQUATION SOLVER\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MOMENTUM EQUATION SOLVER keyword",
+		"scope": "source.abaqus"
+	},
+	"MONITOR": {
+		"prefix": "MONITOR",
+		"body": "MONITOR\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MONITOR keyword",
+		"scope": "source.abaqus"
+	},
+	"MOTION": {
+		"prefix": "MOTION",
+		"body": "MOTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MOTION keyword",
+		"scope": "source.abaqus"
+	},
 	"MPC": {
 		"prefix": "MPC",
 		"body": "MPC\r\n${1:BEAM}, ${2:slave_node}, ${3:master_node}",
 		"description": "MPC multi-point constraint",
+		"scope": "source.abaqus"
+	},
+	"MULLINS EFFECT": {
+		"prefix": "MULLINS EFFECT",
+		"body": "MULLINS EFFECT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "MULLINS EFFECT keyword",
+		"scope": "source.abaqus"
+	},
+	"NCOPY": {
+		"prefix": "NCOPY",
+		"body": "NCOPY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "NCOPY keyword",
+		"scope": "source.abaqus"
+	},
+	"NETWORK STIFFNESS RATIO": {
+		"prefix": "NETWORK STIFFNESS RATIO",
+		"body": "NETWORK STIFFNESS RATIO\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "NETWORK STIFFNESS RATIO keyword",
+		"scope": "source.abaqus"
+	},
+	"NFILL": {
+		"prefix": "NFILL",
+		"body": "NFILL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "NFILL keyword",
+		"scope": "source.abaqus"
+	},
+	"NGEN": {
+		"prefix": "NGEN",
+		"body": "NGEN\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "NGEN keyword",
+		"scope": "source.abaqus"
+	},
+	"NMAP": {
+		"prefix": "NMAP",
+		"body": "NMAP\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "NMAP keyword",
+		"scope": "source.abaqus"
+	},
+	"NODAL ENERGY RATE": {
+		"prefix": "NODAL ENERGY RATE",
+		"body": "NODAL ENERGY RATE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "NODAL ENERGY RATE keyword",
+		"scope": "source.abaqus"
+	},
+	"NODAL THICKNESS": {
+		"prefix": "NODAL THICKNESS",
+		"body": "NODAL THICKNESS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "NODAL THICKNESS keyword",
 		"scope": "source.abaqus"
 	},
 	"NODE": {
@@ -209,6 +1943,24 @@
 		"description": "NODE OUTPUT request",
 		"scope": "source.abaqus"
 	},
+	"NONLINEAR BH": {
+		"prefix": "NONLINEAR BH",
+		"body": "NONLINEAR BH\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "NONLINEAR BH keyword",
+		"scope": "source.abaqus"
+	},
+	"NONSTRUCTURAL MASS": {
+		"prefix": "NONSTRUCTURAL MASS",
+		"body": "NONSTRUCTURAL MASS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "NONSTRUCTURAL MASS keyword",
+		"scope": "source.abaqus"
+	},
+	"NORMAL": {
+		"prefix": "NORMAL",
+		"body": "NORMAL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "NORMAL keyword",
+		"scope": "source.abaqus"
+	},
 	"NSET": {
 		"prefix": "NSET",
 		"body": "NSET, NSET=${1:set_name}${2:, GENERATE}\r\n${3:n1}, ${4:n2}, ${5:increment}",
@@ -219,6 +1971,12 @@
 		"prefix": "ORIENTATION",
 		"body": "ORIENTATION, NAME=${1:ori_name}, SYSTEM=${2:RECTANGULAR}\r\n${3:1.,0.,0.}, ${4:0.,1.,0.}\r\n${5:1}, ${6:0.}",
 		"description": "ORIENTATION Keyword",
+		"scope": "source.abaqus"
+	},
+	"ORNL": {
+		"prefix": "ORNL",
+		"body": "ORNL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ORNL keyword",
 		"scope": "source.abaqus"
 	},
 	"OUTPUT FIELD": {
@@ -233,10 +1991,112 @@
 		"description": "OUTPUT HISTORY request block",
 		"scope": "source.abaqus"
 	},
+	"PARAMETER": {
+		"prefix": "PARAMETER",
+		"body": "PARAMETER\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PARAMETER keyword",
+		"scope": "source.abaqus"
+	},
+	"PARAMETER DEPENDENCE": {
+		"prefix": "PARAMETER DEPENDENCE",
+		"body": "PARAMETER DEPENDENCE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PARAMETER DEPENDENCE keyword",
+		"scope": "source.abaqus"
+	},
+	"PARAMETER SHAPE VARIATION": {
+		"prefix": "PARAMETER SHAPE VARIATION",
+		"body": "PARAMETER SHAPE VARIATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PARAMETER SHAPE VARIATION keyword",
+		"scope": "source.abaqus"
+	},
 	"PART": {
 		"prefix": "PART",
 		"body": "PART, NAME=${1:part_name}\r\n$0\r\n*END PART",
 		"description": "PART / END PART block",
+		"scope": "source.abaqus"
+	},
+	"PARTICLE GENERATOR": {
+		"prefix": "PARTICLE GENERATOR",
+		"body": "PARTICLE GENERATOR\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PARTICLE GENERATOR keyword",
+		"scope": "source.abaqus"
+	},
+	"PARTICLE GENERATOR FLOW": {
+		"prefix": "PARTICLE GENERATOR FLOW",
+		"body": "PARTICLE GENERATOR FLOW\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PARTICLE GENERATOR FLOW keyword",
+		"scope": "source.abaqus"
+	},
+	"PARTICLE GENERATOR INLET": {
+		"prefix": "PARTICLE GENERATOR INLET",
+		"body": "PARTICLE GENERATOR INLET\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PARTICLE GENERATOR INLET keyword",
+		"scope": "source.abaqus"
+	},
+	"PARTICLE GENERATOR MIXTURE": {
+		"prefix": "PARTICLE GENERATOR MIXTURE",
+		"body": "PARTICLE GENERATOR MIXTURE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PARTICLE GENERATOR MIXTURE keyword",
+		"scope": "source.abaqus"
+	},
+	"PERFECTLY MATCHED LAYER": {
+		"prefix": "PERFECTLY MATCHED LAYER",
+		"body": "PERFECTLY MATCHED LAYER\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PERFECTLY MATCHED LAYER keyword",
+		"scope": "source.abaqus"
+	},
+	"PERIODIC": {
+		"prefix": "PERIODIC",
+		"body": "PERIODIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PERIODIC keyword",
+		"scope": "source.abaqus"
+	},
+	"PERIODIC MEDIA": {
+		"prefix": "PERIODIC MEDIA",
+		"body": "PERIODIC MEDIA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PERIODIC MEDIA keyword",
+		"scope": "source.abaqus"
+	},
+	"PERMANENT MAGNETIZATION": {
+		"prefix": "PERMANENT MAGNETIZATION",
+		"body": "PERMANENT MAGNETIZATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PERMANENT MAGNETIZATION keyword",
+		"scope": "source.abaqus"
+	},
+	"PERMEABILITY": {
+		"prefix": "PERMEABILITY",
+		"body": "PERMEABILITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PERMEABILITY keyword",
+		"scope": "source.abaqus"
+	},
+	"PHYSICAL CONSTANTS": {
+		"prefix": "PHYSICAL CONSTANTS",
+		"body": "PHYSICAL CONSTANTS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PHYSICAL CONSTANTS keyword",
+		"scope": "source.abaqus"
+	},
+	"PIEZOELECTRIC": {
+		"prefix": "PIEZOELECTRIC",
+		"body": "PIEZOELECTRIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PIEZOELECTRIC keyword",
+		"scope": "source.abaqus"
+	},
+	"PIPE-SOIL INTERACTION": {
+		"prefix": "PIPE-SOIL INTERACTION",
+		"body": "PIPE-SOIL INTERACTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PIPE-SOIL INTERACTION keyword",
+		"scope": "source.abaqus"
+	},
+	"PIPE-SOIL STIFFNESS": {
+		"prefix": "PIPE-SOIL STIFFNESS",
+		"body": "PIPE-SOIL STIFFNESS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PIPE-SOIL STIFFNESS keyword",
+		"scope": "source.abaqus"
+	},
+	"PLANAR TEST DATA": {
+		"prefix": "PLANAR TEST DATA",
+		"body": "PLANAR TEST DATA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PLANAR TEST DATA keyword",
 		"scope": "source.abaqus"
 	},
 	"PLASTIC": {
@@ -245,10 +2105,202 @@
 		"description": "PLASTIC isotropic hardening data",
 		"scope": "source.abaqus"
 	},
+	"PML COEFFICIENT": {
+		"prefix": "PML COEFFICIENT",
+		"body": "PML COEFFICIENT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PML COEFFICIENT keyword",
+		"scope": "source.abaqus"
+	},
+	"POROUS BULK MODULI": {
+		"prefix": "POROUS BULK MODULI",
+		"body": "POROUS BULK MODULI\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "POROUS BULK MODULI keyword",
+		"scope": "source.abaqus"
+	},
+	"POROUS ELASTIC": {
+		"prefix": "POROUS ELASTIC",
+		"body": "POROUS ELASTIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "POROUS ELASTIC keyword",
+		"scope": "source.abaqus"
+	},
+	"POROUS FAILURE CRITERIA": {
+		"prefix": "POROUS FAILURE CRITERIA",
+		"body": "POROUS FAILURE CRITERIA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "POROUS FAILURE CRITERIA keyword",
+		"scope": "source.abaqus"
+	},
+	"POROUS METAL PLASTICITY": {
+		"prefix": "POROUS METAL PLASTICITY",
+		"body": "POROUS METAL PLASTICITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "POROUS METAL PLASTICITY keyword",
+		"scope": "source.abaqus"
+	},
+	"POST OUTPUT": {
+		"prefix": "POST OUTPUT",
+		"body": "POST OUTPUT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "POST OUTPUT keyword",
+		"scope": "source.abaqus"
+	},
+	"POTENTIAL": {
+		"prefix": "POTENTIAL",
+		"body": "POTENTIAL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "POTENTIAL keyword",
+		"scope": "source.abaqus"
+	},
+	"PRE-TENSION SECTION": {
+		"prefix": "PRE-TENSION SECTION",
+		"body": "PRE-TENSION SECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PRE-TENSION SECTION keyword",
+		"scope": "source.abaqus"
+	},
+	"PREPRINT": {
+		"prefix": "PREPRINT",
+		"body": "PREPRINT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PREPRINT keyword",
+		"scope": "source.abaqus"
+	},
+	"PRESSURE EQUATION SOLVER": {
+		"prefix": "PRESSURE EQUATION SOLVER",
+		"body": "PRESSURE EQUATION SOLVER\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PRESSURE EQUATION SOLVER keyword",
+		"scope": "source.abaqus"
+	},
+	"PRESSURE PENETRATION": {
+		"prefix": "PRESSURE PENETRATION",
+		"body": "PRESSURE PENETRATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PRESSURE PENETRATION keyword",
+		"scope": "source.abaqus"
+	},
+	"PRESSURE STRESS": {
+		"prefix": "PRESSURE STRESS",
+		"body": "PRESSURE STRESS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PRESSURE STRESS keyword",
+		"scope": "source.abaqus"
+	},
+	"PRESTRESS HOLD": {
+		"prefix": "PRESTRESS HOLD",
+		"body": "PRESTRESS HOLD\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PRESTRESS HOLD keyword",
+		"scope": "source.abaqus"
+	},
+	"PRINT": {
+		"prefix": "PRINT",
+		"body": "PRINT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PRINT keyword",
+		"scope": "source.abaqus"
+	},
+	"PROBABILITY DENSITY FUNCTION": {
+		"prefix": "PROBABILITY DENSITY FUNCTION",
+		"body": "PROBABILITY DENSITY FUNCTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PROBABILITY DENSITY FUNCTION keyword",
+		"scope": "source.abaqus"
+	},
+	"PSD-DEFINITION": {
+		"prefix": "PSD-DEFINITION",
+		"body": "PSD-DEFINITION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "PSD-DEFINITION keyword",
+		"scope": "source.abaqus"
+	},
+	"RADIATE": {
+		"prefix": "RADIATE",
+		"body": "RADIATE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "RADIATE keyword",
+		"scope": "source.abaqus"
+	},
+	"RADIATION FILE": {
+		"prefix": "RADIATION FILE",
+		"body": "RADIATION FILE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "RADIATION FILE keyword",
+		"scope": "source.abaqus"
+	},
+	"RADIATION OUTPUT": {
+		"prefix": "RADIATION OUTPUT",
+		"body": "RADIATION OUTPUT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "RADIATION OUTPUT keyword",
+		"scope": "source.abaqus"
+	},
+	"RADIATION PRINT": {
+		"prefix": "RADIATION PRINT",
+		"body": "RADIATION PRINT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "RADIATION PRINT keyword",
+		"scope": "source.abaqus"
+	},
+	"RADIATION SYMMETRY": {
+		"prefix": "RADIATION SYMMETRY",
+		"body": "RADIATION SYMMETRY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "RADIATION SYMMETRY keyword",
+		"scope": "source.abaqus"
+	},
+	"RADIATION VIEW FACTOR": {
+		"prefix": "RADIATION VIEW FACTOR",
+		"body": "RADIATION VIEW FACTOR\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "RADIATION VIEW FACTOR keyword",
+		"scope": "source.abaqus"
+	},
+	"RANDOM RESPONSE": {
+		"prefix": "RANDOM RESPONSE",
+		"body": "RANDOM RESPONSE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "RANDOM RESPONSE keyword",
+		"scope": "source.abaqus"
+	},
+	"RATE DEPENDENT": {
+		"prefix": "RATE DEPENDENT",
+		"body": "RATE DEPENDENT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "RATE DEPENDENT keyword",
+		"scope": "source.abaqus"
+	},
+	"RATIOS": {
+		"prefix": "RATIOS",
+		"body": "RATIOS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "RATIOS keyword",
+		"scope": "source.abaqus"
+	},
+	"REACTION RATE": {
+		"prefix": "REACTION RATE",
+		"body": "REACTION RATE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "REACTION RATE keyword",
+		"scope": "source.abaqus"
+	},
+	"REBAR": {
+		"prefix": "REBAR",
+		"body": "REBAR\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "REBAR keyword",
+		"scope": "source.abaqus"
+	},
+	"REBAR LAYER": {
+		"prefix": "REBAR LAYER",
+		"body": "REBAR LAYER\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "REBAR LAYER keyword",
+		"scope": "source.abaqus"
+	},
+	"REFLECTION": {
+		"prefix": "REFLECTION",
+		"body": "REFLECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "REFLECTION keyword",
+		"scope": "source.abaqus"
+	},
+	"RELEASE": {
+		"prefix": "RELEASE",
+		"body": "RELEASE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "RELEASE keyword",
+		"scope": "source.abaqus"
+	},
+	"RESPONSE SPECTRUM": {
+		"prefix": "RESPONSE SPECTRUM",
+		"body": "RESPONSE SPECTRUM\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "RESPONSE SPECTRUM keyword",
+		"scope": "source.abaqus"
+	},
 	"RESTART": {
 		"prefix": "RESTART",
 		"body": "RESTART, WRITE, FREQUENCY=${1:1}",
 		"description": "RESTART write controls",
+		"scope": "source.abaqus"
+	},
+	"RETAINED NODAL DOFS": {
+		"prefix": "RETAINED NODAL DOFS",
+		"body": "RETAINED NODAL DOFS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "RETAINED NODAL DOFS keyword",
 		"scope": "source.abaqus"
 	},
 	"RIGID BODY": {
@@ -257,10 +2309,148 @@
 		"description": "RIGID BODY Keyword",
 		"scope": "source.abaqus"
 	},
+	"RIGID SURFACE": {
+		"prefix": "RIGID SURFACE",
+		"body": "RIGID SURFACE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "RIGID SURFACE keyword",
+		"scope": "source.abaqus"
+	},
+	"ROTARY INERTIA": {
+		"prefix": "ROTARY INERTIA",
+		"body": "ROTARY INERTIA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "ROTARY INERTIA keyword",
+		"scope": "source.abaqus"
+	},
+	"SECTION CONTROLS": {
+		"prefix": "SECTION CONTROLS",
+		"body": "SECTION CONTROLS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SECTION CONTROLS keyword",
+		"scope": "source.abaqus"
+	},
+	"SECTION FILE": {
+		"prefix": "SECTION FILE",
+		"body": "SECTION FILE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SECTION FILE keyword",
+		"scope": "source.abaqus"
+	},
+	"SECTION ORIGIN": {
+		"prefix": "SECTION ORIGIN",
+		"body": "SECTION ORIGIN\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SECTION ORIGIN keyword",
+		"scope": "source.abaqus"
+	},
+	"SECTION POINTS": {
+		"prefix": "SECTION POINTS",
+		"body": "SECTION POINTS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SECTION POINTS keyword",
+		"scope": "source.abaqus"
+	},
+	"SECTION PRINT": {
+		"prefix": "SECTION PRINT",
+		"body": "SECTION PRINT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SECTION PRINT keyword",
+		"scope": "source.abaqus"
+	},
+	"SELECT CYCLIC SYMMETRY MODES": {
+		"prefix": "SELECT CYCLIC SYMMETRY MODES",
+		"body": "SELECT CYCLIC SYMMETRY MODES\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SELECT CYCLIC SYMMETRY MODES keyword",
+		"scope": "source.abaqus"
+	},
+	"SELECT EIGENMODES": {
+		"prefix": "SELECT EIGENMODES",
+		"body": "SELECT EIGENMODES\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SELECT EIGENMODES keyword",
+		"scope": "source.abaqus"
+	},
+	"SFILM": {
+		"prefix": "SFILM",
+		"body": "SFILM\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SFILM keyword",
+		"scope": "source.abaqus"
+	},
+	"SFLOW": {
+		"prefix": "SFLOW",
+		"body": "SFLOW\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SFLOW keyword",
+		"scope": "source.abaqus"
+	},
+	"SHEAR CENTER": {
+		"prefix": "SHEAR CENTER",
+		"body": "SHEAR CENTER\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SHEAR CENTER keyword",
+		"scope": "source.abaqus"
+	},
+	"SHEAR FAILURE": {
+		"prefix": "SHEAR FAILURE",
+		"body": "SHEAR FAILURE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SHEAR FAILURE keyword",
+		"scope": "source.abaqus"
+	},
+	"SHEAR RETENTION": {
+		"prefix": "SHEAR RETENTION",
+		"body": "SHEAR RETENTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SHEAR RETENTION keyword",
+		"scope": "source.abaqus"
+	},
+	"SHEAR TEST DATA": {
+		"prefix": "SHEAR TEST DATA",
+		"body": "SHEAR TEST DATA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SHEAR TEST DATA keyword",
+		"scope": "source.abaqus"
+	},
+	"SHELL GENERAL SECTION": {
+		"prefix": "SHELL GENERAL SECTION",
+		"body": "SHELL GENERAL SECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SHELL GENERAL SECTION keyword",
+		"scope": "source.abaqus"
+	},
 	"SHELL SECTION": {
 		"prefix": "SHELL SECTION",
 		"body": "SHELL SECTION, ELSET=${1:elset_name}, MATERIAL=${2:mat_name}\r\n${3:thickness}",
 		"description": "SHELL SECTION Keyword",
+		"scope": "source.abaqus"
+	},
+	"SHELL TO SOLID COUPLING": {
+		"prefix": "SHELL TO SOLID COUPLING",
+		"body": "SHELL TO SOLID COUPLING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SHELL TO SOLID COUPLING keyword",
+		"scope": "source.abaqus"
+	},
+	"SIMPEDANCE": {
+		"prefix": "SIMPEDANCE",
+		"body": "SIMPEDANCE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SIMPEDANCE keyword",
+		"scope": "source.abaqus"
+	},
+	"SIMPLE SHEAR TEST DATA": {
+		"prefix": "SIMPLE SHEAR TEST DATA",
+		"body": "SIMPLE SHEAR TEST DATA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SIMPLE SHEAR TEST DATA keyword",
+		"scope": "source.abaqus"
+	},
+	"SLIDE LINE": {
+		"prefix": "SLIDE LINE",
+		"body": "SLIDE LINE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SLIDE LINE keyword",
+		"scope": "source.abaqus"
+	},
+	"SLOAD": {
+		"prefix": "SLOAD",
+		"body": "SLOAD\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SLOAD keyword",
+		"scope": "source.abaqus"
+	},
+	"SOFTENING REGULARIZATION": {
+		"prefix": "SOFTENING REGULARIZATION",
+		"body": "SOFTENING REGULARIZATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SOFTENING REGULARIZATION keyword",
+		"scope": "source.abaqus"
+	},
+	"SOILS": {
+		"prefix": "SOILS",
+		"body": "SOILS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SOILS keyword",
 		"scope": "source.abaqus"
 	},
 	"SOLID SECTION": {
@@ -269,16 +2459,172 @@
 		"description": "SOLID SECTION Keyword",
 		"scope": "source.abaqus"
 	},
+	"SOLUBILITY": {
+		"prefix": "SOLUBILITY",
+		"body": "SOLUBILITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SOLUBILITY keyword",
+		"scope": "source.abaqus"
+	},
+	"SOLUTION TECHNIQUE": {
+		"prefix": "SOLUTION TECHNIQUE",
+		"body": "SOLUTION TECHNIQUE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SOLUTION TECHNIQUE keyword",
+		"scope": "source.abaqus"
+	},
+	"SOLVER CONTROLS": {
+		"prefix": "SOLVER CONTROLS",
+		"body": "SOLVER CONTROLS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SOLVER CONTROLS keyword",
+		"scope": "source.abaqus"
+	},
+	"SORPTION": {
+		"prefix": "SORPTION",
+		"body": "SORPTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SORPTION keyword",
+		"scope": "source.abaqus"
+	},
+	"SPECIFIC HEAT": {
+		"prefix": "SPECIFIC HEAT",
+		"body": "SPECIFIC HEAT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SPECIFIC HEAT keyword",
+		"scope": "source.abaqus"
+	},
+	"SPECTRUM": {
+		"prefix": "SPECTRUM",
+		"body": "SPECTRUM\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SPECTRUM keyword",
+		"scope": "source.abaqus"
+	},
+	"SPH SURFACE BEHAVIOR": {
+		"prefix": "SPH SURFACE BEHAVIOR",
+		"body": "SPH SURFACE BEHAVIOR\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SPH SURFACE BEHAVIOR keyword",
+		"scope": "source.abaqus"
+	},
+	"SPRING": {
+		"prefix": "SPRING",
+		"body": "SPRING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SPRING keyword",
+		"scope": "source.abaqus"
+	},
+	"SRADIATE": {
+		"prefix": "SRADIATE",
+		"body": "SRADIATE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SRADIATE keyword",
+		"scope": "source.abaqus"
+	},
 	"STATIC STEP": {
 		"prefix": "STATIC",
 		"body": "STEP, NAME=${1:step_name}, NLGEOM=${2:NO}\r\n*STATIC\r\n${3:initial_inc}, ${4:time_period}, ${5:min_inc}, ${6:max_inc}\r\n**\r\n*OUTPUT, FIELD, NUMBER INTERVAL=${7:10}\r\n*NODE OUTPUT\r\n${8:U, RF}\r\n*ELEMENT OUTPUT\r\n${9:S, E}\r\n*END STEP",
 		"description": "STATIC full step with output",
 		"scope": "source.abaqus"
 	},
+	"STEADY STATE CRITERIA": {
+		"prefix": "STEADY STATE CRITERIA",
+		"body": "STEADY STATE CRITERIA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "STEADY STATE CRITERIA keyword",
+		"scope": "source.abaqus"
+	},
+	"STEADY STATE DETECTION": {
+		"prefix": "STEADY STATE DETECTION",
+		"body": "STEADY STATE DETECTION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "STEADY STATE DETECTION keyword",
+		"scope": "source.abaqus"
+	},
+	"STEADY STATE DYNAMICS": {
+		"prefix": "STEADY STATE DYNAMICS",
+		"body": "STEADY STATE DYNAMICS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "STEADY STATE DYNAMICS keyword",
+		"scope": "source.abaqus"
+	},
+	"STEADY STATE TRANSPORT": {
+		"prefix": "STEADY STATE TRANSPORT",
+		"body": "STEADY STATE TRANSPORT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "STEADY STATE TRANSPORT keyword",
+		"scope": "source.abaqus"
+	},
 	"STEP": {
 		"prefix": "STEP",
 		"body": "STEP, NAME=${1:step_name}\r\n$0\r\n*END STEP",
 		"description": "STEP / END STEP block",
+		"scope": "source.abaqus"
+	},
+	"SUBCYCLING": {
+		"prefix": "SUBCYCLING",
+		"body": "SUBCYCLING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SUBCYCLING keyword",
+		"scope": "source.abaqus"
+	},
+	"SUBMODEL": {
+		"prefix": "SUBMODEL",
+		"body": "SUBMODEL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SUBMODEL keyword",
+		"scope": "source.abaqus"
+	},
+	"SUBSTRUCTURE COPY": {
+		"prefix": "SUBSTRUCTURE COPY",
+		"body": "SUBSTRUCTURE COPY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SUBSTRUCTURE COPY keyword",
+		"scope": "source.abaqus"
+	},
+	"SUBSTRUCTURE DAMPING": {
+		"prefix": "SUBSTRUCTURE DAMPING",
+		"body": "SUBSTRUCTURE DAMPING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SUBSTRUCTURE DAMPING keyword",
+		"scope": "source.abaqus"
+	},
+	"SUBSTRUCTURE DAMPING CONTROLS": {
+		"prefix": "SUBSTRUCTURE DAMPING CONTROLS",
+		"body": "SUBSTRUCTURE DAMPING CONTROLS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SUBSTRUCTURE DAMPING CONTROLS keyword",
+		"scope": "source.abaqus"
+	},
+	"SUBSTRUCTURE DELETE": {
+		"prefix": "SUBSTRUCTURE DELETE",
+		"body": "SUBSTRUCTURE DELETE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SUBSTRUCTURE DELETE keyword",
+		"scope": "source.abaqus"
+	},
+	"SUBSTRUCTURE DIRECTORY": {
+		"prefix": "SUBSTRUCTURE DIRECTORY",
+		"body": "SUBSTRUCTURE DIRECTORY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SUBSTRUCTURE DIRECTORY keyword",
+		"scope": "source.abaqus"
+	},
+	"SUBSTRUCTURE GENERATE": {
+		"prefix": "SUBSTRUCTURE GENERATE",
+		"body": "SUBSTRUCTURE GENERATE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SUBSTRUCTURE GENERATE keyword",
+		"scope": "source.abaqus"
+	},
+	"SUBSTRUCTURE LOAD CASE": {
+		"prefix": "SUBSTRUCTURE LOAD CASE",
+		"body": "SUBSTRUCTURE LOAD CASE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SUBSTRUCTURE LOAD CASE keyword",
+		"scope": "source.abaqus"
+	},
+	"SUBSTRUCTURE MATRIX OUTPUT": {
+		"prefix": "SUBSTRUCTURE MATRIX OUTPUT",
+		"body": "SUBSTRUCTURE MATRIX OUTPUT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SUBSTRUCTURE MATRIX OUTPUT keyword",
+		"scope": "source.abaqus"
+	},
+	"SUBSTRUCTURE MODAL DAMPING": {
+		"prefix": "SUBSTRUCTURE MODAL DAMPING",
+		"body": "SUBSTRUCTURE MODAL DAMPING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SUBSTRUCTURE MODAL DAMPING keyword",
+		"scope": "source.abaqus"
+	},
+	"SUBSTRUCTURE PATH": {
+		"prefix": "SUBSTRUCTURE PATH",
+		"body": "SUBSTRUCTURE PATH\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SUBSTRUCTURE PATH keyword",
+		"scope": "source.abaqus"
+	},
+	"SUBSTRUCTURE PROPERTY": {
+		"prefix": "SUBSTRUCTURE PROPERTY",
+		"body": "SUBSTRUCTURE PROPERTY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SUBSTRUCTURE PROPERTY keyword",
 		"scope": "source.abaqus"
 	},
 	"SURFACE": {
@@ -293,10 +2639,58 @@
 		"description": "SURFACE INTERACTION Keyword",
 		"scope": "source.abaqus"
 	},
+	"SWELLING": {
+		"prefix": "SWELLING",
+		"body": "SWELLING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SWELLING keyword",
+		"scope": "source.abaqus"
+	},
+	"SYMMETRIC MODEL GENERATION": {
+		"prefix": "SYMMETRIC MODEL GENERATION",
+		"body": "SYMMETRIC MODEL GENERATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SYMMETRIC MODEL GENERATION keyword",
+		"scope": "source.abaqus"
+	},
+	"SYMMETRIC RESULTS TRANSFER": {
+		"prefix": "SYMMETRIC RESULTS TRANSFER",
+		"body": "SYMMETRIC RESULTS TRANSFER\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SYMMETRIC RESULTS TRANSFER keyword",
+		"scope": "source.abaqus"
+	},
+	"SYSTEM": {
+		"prefix": "SYSTEM",
+		"body": "SYSTEM\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "SYSTEM keyword",
+		"scope": "source.abaqus"
+	},
 	"TEMPERATURE": {
 		"prefix": "TEMPERATURE",
 		"body": "TEMPERATURE\r\n${1:nset_or_node}, ${2:temperature}",
 		"description": "TEMPERATURE predefined field",
+		"scope": "source.abaqus"
+	},
+	"TENSILE FAILURE": {
+		"prefix": "TENSILE FAILURE",
+		"body": "TENSILE FAILURE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "TENSILE FAILURE keyword",
+		"scope": "source.abaqus"
+	},
+	"TENSION CUTOFF": {
+		"prefix": "TENSION CUTOFF",
+		"body": "TENSION CUTOFF\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "TENSION CUTOFF keyword",
+		"scope": "source.abaqus"
+	},
+	"TENSION STIFFENING": {
+		"prefix": "TENSION STIFFENING",
+		"body": "TENSION STIFFENING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "TENSION STIFFENING keyword",
+		"scope": "source.abaqus"
+	},
+	"THERMAL EXPANSION": {
+		"prefix": "THERMAL EXPANSION",
+		"body": "THERMAL EXPANSION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "THERMAL EXPANSION keyword",
 		"scope": "source.abaqus"
 	},
 	"TIE": {
@@ -305,10 +2699,184 @@
 		"description": "TIE Keyword",
 		"scope": "source.abaqus"
 	},
+	"TIME POINTS": {
+		"prefix": "TIME POINTS",
+		"body": "TIME POINTS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "TIME POINTS keyword",
+		"scope": "source.abaqus"
+	},
+	"TORQUE": {
+		"prefix": "TORQUE",
+		"body": "TORQUE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "TORQUE keyword",
+		"scope": "source.abaqus"
+	},
+	"TORQUE PRINT": {
+		"prefix": "TORQUE PRINT",
+		"body": "TORQUE PRINT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "TORQUE PRINT keyword",
+		"scope": "source.abaqus"
+	},
+	"TRACER PARTICLE": {
+		"prefix": "TRACER PARTICLE",
+		"body": "TRACER PARTICLE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "TRACER PARTICLE keyword",
+		"scope": "source.abaqus"
+	},
 	"TRANSFORM": {
 		"prefix": "TRANSFORM",
 		"body": "TRANSFORM, NSET=${1:nset_name}, TYPE=${2:R}\r\n${3:x1}, ${4:y1}, ${5:z1}, ${6:x2}, ${7:y2}, ${8:z2}",
 		"description": "TRANSFORM local coordinate system at nodes",
+		"scope": "source.abaqus"
+	},
+	"TRANSPORT EQUATION SOLVER": {
+		"prefix": "TRANSPORT EQUATION SOLVER",
+		"body": "TRANSPORT EQUATION SOLVER\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "TRANSPORT EQUATION SOLVER keyword",
+		"scope": "source.abaqus"
+	},
+	"TRANSPORT VELOCITY": {
+		"prefix": "TRANSPORT VELOCITY",
+		"body": "TRANSPORT VELOCITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "TRANSPORT VELOCITY keyword",
+		"scope": "source.abaqus"
+	},
+	"TRANSVERSE SHEAR STIFFNESS": {
+		"prefix": "TRANSVERSE SHEAR STIFFNESS",
+		"body": "TRANSVERSE SHEAR STIFFNESS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "TRANSVERSE SHEAR STIFFNESS keyword",
+		"scope": "source.abaqus"
+	},
+	"TRIAXIAL TEST DATA": {
+		"prefix": "TRIAXIAL TEST DATA",
+		"body": "TRIAXIAL TEST DATA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "TRIAXIAL TEST DATA keyword",
+		"scope": "source.abaqus"
+	},
+	"TRS": {
+		"prefix": "TRS",
+		"body": "TRS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "TRS keyword",
+		"scope": "source.abaqus"
+	},
+	"TURBULENCE MODEL": {
+		"prefix": "TURBULENCE MODEL",
+		"body": "TURBULENCE MODEL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "TURBULENCE MODEL keyword",
+		"scope": "source.abaqus"
+	},
+	"UEL PROPERTY": {
+		"prefix": "UEL PROPERTY",
+		"body": "UEL PROPERTY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "UEL PROPERTY keyword",
+		"scope": "source.abaqus"
+	},
+	"UNDEX CHARGE PROPERTY": {
+		"prefix": "UNDEX CHARGE PROPERTY",
+		"body": "UNDEX CHARGE PROPERTY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "UNDEX CHARGE PROPERTY keyword",
+		"scope": "source.abaqus"
+	},
+	"UNIAXIAL": {
+		"prefix": "UNIAXIAL",
+		"body": "UNIAXIAL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "UNIAXIAL keyword",
+		"scope": "source.abaqus"
+	},
+	"UNIAXIAL TEST DATA": {
+		"prefix": "UNIAXIAL TEST DATA",
+		"body": "UNIAXIAL TEST DATA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "UNIAXIAL TEST DATA keyword",
+		"scope": "source.abaqus"
+	},
+	"UNLOADING DATA": {
+		"prefix": "UNLOADING DATA",
+		"body": "UNLOADING DATA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "UNLOADING DATA keyword",
+		"scope": "source.abaqus"
+	},
+	"USER DEFINED FIELD": {
+		"prefix": "USER DEFINED FIELD",
+		"body": "USER DEFINED FIELD\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "USER DEFINED FIELD keyword",
+		"scope": "source.abaqus"
+	},
+	"USER ELEMENT": {
+		"prefix": "USER ELEMENT",
+		"body": "USER ELEMENT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "USER ELEMENT keyword",
+		"scope": "source.abaqus"
+	},
+	"USER MATERIAL": {
+		"prefix": "USER MATERIAL",
+		"body": "USER MATERIAL\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "USER MATERIAL keyword",
+		"scope": "source.abaqus"
+	},
+	"USER OUTPUT VARIABLES": {
+		"prefix": "USER OUTPUT VARIABLES",
+		"body": "USER OUTPUT VARIABLES\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "USER OUTPUT VARIABLES keyword",
+		"scope": "source.abaqus"
+	},
+	"VARIABLE MASS SCALING": {
+		"prefix": "VARIABLE MASS SCALING",
+		"body": "VARIABLE MASS SCALING\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "VARIABLE MASS SCALING keyword",
+		"scope": "source.abaqus"
+	},
+	"VIEW FACTOR OUTPUT": {
+		"prefix": "VIEW FACTOR OUTPUT",
+		"body": "VIEW FACTOR OUTPUT\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "VIEW FACTOR OUTPUT keyword",
+		"scope": "source.abaqus"
+	},
+	"VISCO": {
+		"prefix": "VISCO",
+		"body": "VISCO\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "VISCO keyword",
+		"scope": "source.abaqus"
+	},
+	"VISCOELASTIC": {
+		"prefix": "VISCOELASTIC",
+		"body": "VISCOELASTIC\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "VISCOELASTIC keyword",
+		"scope": "source.abaqus"
+	},
+	"VISCOSITY": {
+		"prefix": "VISCOSITY",
+		"body": "VISCOSITY\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "VISCOSITY keyword",
+		"scope": "source.abaqus"
+	},
+	"VISCOUS": {
+		"prefix": "VISCOUS",
+		"body": "VISCOUS\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "VISCOUS keyword",
+		"scope": "source.abaqus"
+	},
+	"VOID NUCLEATION": {
+		"prefix": "VOID NUCLEATION",
+		"body": "VOID NUCLEATION\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "VOID NUCLEATION keyword",
+		"scope": "source.abaqus"
+	},
+	"VOLUMETRIC TEST DATA": {
+		"prefix": "VOLUMETRIC TEST DATA",
+		"body": "VOLUMETRIC TEST DATA\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "VOLUMETRIC TEST DATA keyword",
+		"scope": "source.abaqus"
+	},
+	"WAVE": {
+		"prefix": "WAVE",
+		"body": "WAVE\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "WAVE keyword",
+		"scope": "source.abaqus"
+	},
+	"WIND": {
+		"prefix": "WIND",
+		"body": "WIND\\r\\n${1:Abaqus Keywords Reference Guide}",
+		"description": "WIND keyword",
 		"scope": "source.abaqus"
 	}
 }

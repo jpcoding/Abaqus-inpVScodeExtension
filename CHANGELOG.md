@@ -4,6 +4,13 @@ All notable changes to the **JP Abaqus** VS Code extension are documented here.
 
 ---
 
+## [1.2.3] — 2026-03-15
+
+### Added
+- **480 snippets** scraped directly from the Abaqus 2016 Keywords Reference Guide — up from 52. Every keyword in the official manual now has a completion entry.
+
+---
+
 ## [1.2.1] — 2026-02-27
 
 ### Changed

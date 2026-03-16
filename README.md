@@ -10,7 +10,7 @@ https://marketplace.visualstudio.com/items?itemName=JP.abaqus
 - Block folding for `*Part`, `*Assembly`, `*Instance`, and `*Step` sections
 - Snippets for common keywords (see [Snippets](#snippets) below)
 - Works with `.inp`, `.inc`, and `.incl` files
-- VS Code built-in terminal can be used to run Abaqus jobs directly — no need to leave the editor
+- Run Abaqus jobs from the VS Code built-in terminal without leaving the editor
 
 ---
 
@@ -168,6 +168,35 @@ Type a keyword prefix and press **Tab** (or select from the IntelliSense suggest
 
 ---
 
+## Running Abaqus from the Terminal
+
+The VS Code built-in terminal (**Ctrl+`**) lets you submit and monitor Abaqus jobs without leaving the editor.
+
+**Submit a job**
+```bash
+abaqus job=my_model input=my_model.inp cpus=4 interactive
+```
+
+**Common options**
+
+| Option | Description |
+|---|---|
+| `job=<name>` | Output file base name |
+| `input=<file>` | `.inp` file to run |
+| `cpus=<n>` | Number of CPU cores |
+| `interactive` | Print status to terminal (blocks until done) |
+| `double=both` | Run in full double precision |
+| `scratch=<dir>` | Scratch directory for temporary files |
+
+**Check job status** (while running without `interactive`)
+```bash
+abaqus job=my_model status
+```
+
+Open a terminal with **Terminal → New Terminal** or **Ctrl+`**, navigate to your working directory, and run the command above. The `.odb`, `.dat`, and `.msg` output files will appear in the same folder and can be opened in Abaqus/Viewer.
+
+---
+
 ## Troubleshooting — `.inp` files not recognised
 
 If the extension stops highlighting `.inp` files after an update or reinstall:
@@ -193,6 +222,13 @@ This extension is based on the Sublime Text package by SenhorLucas: https://gith
 ---
 
 ## Changelog
+
+### v1.2.3 — 2026-03-15
+
+- Snippets expanded from 52 to **480** — every keyword in the Abaqus 2016 Keywords Reference Guide now has a completion entry.
+- Added terminal usage guide to README.
+
+---
 
 ### v1.2.2 — 2026-02-27
 
