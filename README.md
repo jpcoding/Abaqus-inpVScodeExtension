@@ -7,8 +7,15 @@ https://marketplace.visualstudio.com/items?itemName=JP.abaqus
 ## Features
 
 - Syntax highlighting for Abaqus keywords, parameters, comments, and data lines
-- Block folding for `*Part`, `*Assembly`, `*Instance`, and `*Step` sections
-- Snippets for common keywords (see [Snippets](#snippets) below)
+- Block folding for every `*KEYWORD` block (including `*Part`, `*Assembly`, `*Instance`, `*Step`)
+- Snippets for all Abaqus 2016 keywords (see [Snippets](#snippets) below)
+- Formatting commands via Command Palette (`Ctrl+Shift+P`):
+  - **Abaqus: Uppercase Keywords** — convert keyword lines to uppercase
+  - **Abaqus: Uppercase All** — convert entire file to uppercase
+  - **Abaqus: Remove All Comments** — delete all `**` comment lines
+  - **Abaqus: Remove Blank Lines** — delete empty and whitespace-only lines
+  - **Abaqus: Remove Leading Spaces** — strip indentation from all lines
+  - **Abaqus: Indent Data Lines** — indent data lines under their keyword
 - Works with `.inp`, `.inc`, and `.incl` files
 - Run Abaqus jobs from the VS Code built-in terminal without leaving the editor
 

@@ -32,12 +32,80 @@ function provideFoldingRanges(document) {
     return ranges;
 }
 
+function replaceDocumentText(editor, newText) {
+    const document = editor.document;
+    const fullRange = new vscode.Range(
+        document.positionAt(0),
+        document.positionAt(document.getText().length)
+    );
+    return editor.edit(editBuilder => editBuilder.replace(fullRange, newText));
+}
+
 function activate(context) {
     context.subscriptions.push(
         vscode.languages.registerFoldingRangeProvider(
             { language: 'abaqus' },
             { provideFoldingRanges }
         )
+    );
+
+    // Uppercase keywords: lines starting with * (but not **) are uppercased
+    context.subscriptions.push(
+        vscode.commands.registerTextEditorCommand('abaqus.uppercaseKeywords', editor => {
+            const lines = editor.document.getText().split('\n');
+            const result = lines.map(line =>
+                KEYWORD_LINE.test(line) ? line.toUpperCase() : line
+            );
+            replaceDocumentText(editor, result.join('\n'));
+        })
+    );
+
+    // Remove all comment lines (lines starting with **)
+    context.subscriptions.push(
+        vscode.commands.registerTextEditorCommand('abaqus.removeComments', editor => {
+            const lines = editor.document.getText().split('\n');
+            const result = lines.filter(line => !/^\s*\*\*/.test(line));
+            replaceDocumentText(editor, result.join('\n'));
+        })
+    );
+
+    // Remove blank lines (empty or whitespace only)
+    context.subscriptions.push(
+        vscode.commands.registerTextEditorCommand('abaqus.removeBlankLines', editor => {
+            const lines = editor.document.getText().split('\n');
+            const result = lines.filter(line => /\S/.test(line));
+            replaceDocumentText(editor, result.join('\n'));
+        })
+    );
+
+    // Remove leading spaces from all lines
+    context.subscriptions.push(
+        vscode.commands.registerTextEditorCommand('abaqus.removeLeadingSpaces', editor => {
+            const lines = editor.document.getText().split('\n');
+            const result = lines.map(line => line.trimStart());
+            replaceDocumentText(editor, result.join('\n'));
+        })
+    );
+
+    // Indent data lines: non-keyword, non-comment lines get one level of indentation
+    context.subscriptions.push(
+        vscode.commands.registerTextEditorCommand('abaqus.indentDataLines', editor => {
+            const lines = editor.document.getText().split('\n');
+            const result = lines.map(line => {
+                if (KEYWORD_LINE.test(line) || /^\s*\*\*/.test(line) || !/\S/.test(line)) {
+                    return line;
+                }
+                return '  ' + line.trimStart();
+            });
+            replaceDocumentText(editor, result.join('\n'));
+        })
+    );
+
+    // Uppercase entire file
+    context.subscriptions.push(
+        vscode.commands.registerTextEditorCommand('abaqus.uppercaseAll', editor => {
+            replaceDocumentText(editor, editor.document.getText().toUpperCase());
+        })
     );
 }
 

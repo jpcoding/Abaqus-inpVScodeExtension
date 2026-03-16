@@ -53,6 +53,32 @@
 				"path": "./snippets/snippets.json"
 			}
 		],
+		"commands": [
+			{
+				"command": "abaqus.uppercaseKeywords",
+				"title": "Abaqus: Uppercase Keywords"
+			},
+			{
+				"command": "abaqus.removeComments",
+				"title": "Abaqus: Remove All Comments"
+			},
+			{
+				"command": "abaqus.removeBlankLines",
+				"title": "Abaqus: Remove Blank Lines"
+			},
+			{
+				"command": "abaqus.removeLeadingSpaces",
+				"title": "Abaqus: Remove Leading Spaces"
+			},
+			{
+				"command": "abaqus.indentDataLines",
+				"title": "Abaqus: Indent Data Lines"
+			},
+			{
+				"command": "abaqus.uppercaseAll",
+				"title": "Abaqus: Uppercase All"
+			}
+		],
 		"configurationDefaults": {
 			"[abaqus]": {
 				"editor.maxTokenizationLineLength": 500000,
